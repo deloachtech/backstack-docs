@@ -4,6 +4,9 @@ import {defineConfig} from 'vitepress'
 export default defineConfig({
     title: "Backstack",
     description: "Backend resources for your codebase.",
+    head: [
+        ['link', { rel: 'icon', href: '/images/favicon.svg', type: 'image/svg+xml' }]
+    ],
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         nav: [
