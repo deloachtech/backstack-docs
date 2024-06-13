@@ -1,0 +1,16 @@
+{
+  "name": "backstack-docs",
+  "version": "0.0.0",
+  "description": "backstack docs.",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "vite": "^5.2.0",
+    "vitepress": "^1.2.3"
+  }
+}
