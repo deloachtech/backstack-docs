@@ -1,15 +1,7 @@
----
-title: Managing resource usage
-nextjs:
-  metadata:
-    title: Managing resource usage
-    description: Methods for managing resource usage.
----
+# Managing Resource Usage
 
 Backstack offers a variety of methods for managing resource usage within your codebase.
 
-
----
 
 ## Counters
 
@@ -39,9 +31,7 @@ The `session.account.counters` is an array of aggregated values for the current 
 }
 ```
 
-See the [counters resource](/docs/counters) for more information.
-
----
+See the [counters resource](/counters) for more information.
 
 ## Account stats
 
@@ -62,4 +52,4 @@ The `session.account.stats` array contains system-generated values you can use f
 }
 ```
 
-See the [account stats resource](/docs/account-stats) for more information.
+See the [account stats resource](/account-stats) for more information.

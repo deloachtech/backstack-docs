@@ -1,22 +1,14 @@
----
-title: Version Assignment
-nextjs:
-  metadata:
-    title: Version Assignment
-    description: Allowing accounts to select app versions.
----
+# Version Assignment
 
 Offer an interface for users to modify their application version.
 
-
----
 
 
 ## Allowing accounts to select versions
 
 The app schema contains versions relevant to the accounts domain. The `domains.[session.account.domain_id]` is an array of version IDs and their values contain the version information.
 
-```js
+```json
 // app schema object
 {
   ...
@@ -33,14 +25,15 @@ The app schema contains versions relevant to the accounts domain. The `domains.[
 
 The following will provide values for a group of radios for allowing selection of the application version.
 
-{% partial file="code/version-list.md" /%}
+<!--@include: ./includes/version-list.md-->
+
 
 
 ### Request
 
 Submit the selected version ID to the API for processing.
 
-```shell
+```sh
 POST /v1/account/versions/:version_id
 ```
 
@@ -48,5 +41,7 @@ POST /v1/account/versions/:version_id
 
 The selected Version object.
 
-{% partial file="objects/version.md" /%}
+<!--@include: ./includes/objects/version.md-->
+<!--@include: ./includes/objects/properties/version.md-->
+
 

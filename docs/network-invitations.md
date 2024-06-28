@@ -1,18 +1,9 @@
----
-title: Network invitation
-nextjs:
-  metadata:
-    title: Network invitation
-    description: The network invitation object.
----
+# Network Invitation
 
-todo
+TODO
 
 
----
 
 ## The Network Invitation object
 
-{% partial file="objects/network-invitation.md" /%}
-
----
+<!--@include: ./includes/network-invitation.md-->

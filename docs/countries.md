@@ -1,20 +1,11 @@
----
-title: Countries
-nextjs:
-  metadata:
-    title: Countries
-    description: The countries resource.
----
+# Countries
 
 The API uses structured country data to perform geo-related computations.
 
----
-
 ## The Country object
 
-{% partial file="objects/country.md" /%}
-
----
+<!--@include: ./includes/objects/country.md-->
+<!--@include: ./includes/objects/properties/country.md-->
 
 ## Read country
 
@@ -22,7 +13,7 @@ Retrieves the country object for the current `session.account`.
 
 ### Request
 
-```js
+```sh
 GET /v1/static/country
 ```
 
@@ -30,10 +21,7 @@ GET /v1/static/country
 
 The Country object.
 
-{% partial file="objects/country.md" variables={properties:false, partialCode:true} /%}
-
----
-
+<!--@include: ./includes/objects/partials/country.md-->
 
 ## Enumerated countries
 
@@ -41,19 +29,19 @@ Provides an enumerated collection of country data for HTML selects, radios, or s
 
 ### Request
 
-```shell
+```sh
 GET /v1/static/countries/enumerated
 ```
 
 ### Response
 
-```js
+```json
 [
   {
     "id": "US",
     "title": "United States"
   },
-  ... 
+  ...
 [
 ```
 
@@ -61,20 +49,19 @@ Optionally, provide a custom value for the `id` and/or `title` property names in
 
 ### Request
 
-```shell
+```sh
 GET /v1/static/countries/enumerated
 ?id=value&title=label
 ```
 
 ### Response
 
-```js
+```json
 [
   {
     "value": "US",
     "label": "United States"
   },
-  ... 
+  ...
 [
 ```
-

@@ -1,6 +1,3 @@
-<script setup>
-import AccountUser from './snippets/objects/account-user.md'
-</script>
 
 # Account Users
 
@@ -8,27 +5,23 @@ import AccountUser from './snippets/objects/account-user.md'
 
 An account user represents the `session.user` and the access control privileges provided by the `session.account`.
 
-
 ## How It Works
 
 When an account adds a new user, a system-generated email is sent to the user with a link to the log-in page.
 
 ![Images](/images/diagrams/account-users.svg)
 
-
 ## Prerequisites
 
 Your application must have the log-in URL defined in the dashboard settings. This URL serves as the base endpoint for the link provided in the new user email.
 
-
 ## Create A User
-
 
 Submit the new user data to the API for processing. An activation email is sent to the new user with a link to your log-in page to begin the [log-in process](/login).
 
 ### Request
 
-```shell
+```sh
 POST /v1/account/users
 {
   "name": "James Doe",
@@ -40,97 +33,59 @@ POST /v1/account/users
 }
 ```
 
-| Parameter | Type | Description |
-| --------- | ---- | ----------- |
+| Parameter | Type | Description|
+| --- | --- | --- |
 | `name` | Required string | The users real name. |
 | `email` | Required string | The users email address. |
-| `roles` |  Optional array | An array of role ids assigned to the user. |
-
+| `roles` | Optional array | An array of role ids assigned to the user. |
 
 ### Response
 
 The Account User object
 
-
-<<< @/snippets/objects/account-user.md
-
-
+<!--@include: ./includes/objects/partials/account-user.md-->
 
 ## List Users
 
 Retrieve a list of the `session.account` users.
 
-
 ### Request
 
-```shell
+```sh
 GET /v1/account/users
 ?page_size=25&page_index=1&search&filters[status]=active
 ```
 
-
-<<< @/snippets/list-parameters.md
-
+<!--@include: ./includes/list-parameters.md-->
 
 | Filter | Type | Options |
+| --- | --- | --- |
 | `status` | Optional string | `active`, `pending` or `deleted`. Omit to list all users. |
-
-
 
 ### Response
 
-<<< @/snippets/list-response.md
-
+<!--@include: ./includes/list-response.md-->
 
 | List item property | Type | Description |
+| --- | --- | --- |
 | `id` | String | The user ID. |
 | `created` | Integer | The date the relationship was created. |
 | `username` | String | The users log-in name. |
 | `name` | String | The users real name. Required when creating the relationship. Read-only once the user logs in. |
-|  |  |  |
-|  |  |  |
-
-
----
-* 
-* 
-* 
----
-* `email`
-* String
-* The users email address. Required when creating the relationship. Read-only once the user logs in.
----
-* `avatar`
-* String
-* The URL for avatar image uploaded by the user.
----
-* `editable`
-* Boolean
-* Indicates if the system will accept edits on the particular user.
----
-* `roles`
-* Array
-* The role IDs assigned by the account to the user.
----
-* `roles_csv`
-* String
-* The roles assigned to the user in a comma seperated string.
----
-* `last_login`
-* Integer
-* The timestamp of the users last log in for the account.
-{% /table %}
-
-
----
+| `email` | String | The users email address. Required when creating the relationship. Read-only once the user logs in. |
+| `avatar` | String | The URL for avatar image uploaded by the user. |
+| `editable` | Boolean | Indicates if the system will accept edits on the particular user. |
+| `roles` | Array | The role IDs assigned by the account to the user. |
+| `roles_csv` | String | The roles assigned to the user in a comma separated string. |
+| `last_login` | Integer | The timestamp of the users last log in for the account. |
 
 ## Update a user
 
-Updates user values that are related to the account relationship. See the [user](/docs/user) documentation for information on updating the session user.
+Updates user values that are related to the account relationship. See the [user](/user) documentation for information on updating the session user.
 
 ### Request
 
-```shell
+```sh
 POST /v1/account/users/:user_id
 {
   "roles": [
@@ -140,45 +95,28 @@ POST /v1/account/users/:user_id
 }
 ```
 
-{% table %}
-Parameter
-Type
-Description
----
-* `name`
-* Optional string
-* The users real name. **This value is updatable until the user is activated.**
----
-* `email`
-* Optional string
-* The users email address. **This value is updatable until the user is activated.**
----
-* `resend_email`
-* Boolean
-* Submitting `true` will resend the account activation email. **This option is available until the user is activated.**
----
-* `roles`
-* Optional array
-* An array of role IDs assigned to the user.
-{% /table %}
+| Parameter | Type | Description |
+| --- | --- | --- |
+| `name` | Optional string | The users real name. **This value is updatable until the user is activated.** |
+| `email` | Optional string | The users email address. **This value is updatable until the user is activated.** |
+| `resend_email` | Boolean | Submitting `true` will resend the account activation email. **This option is available until the user is activated.** |
+| `roles` | Optional array | An array of role IDs assigned to the user. |
 
-{% partial file="update-note.md" /%}
+<!--@include: ./includes/update-note.md-->
 
 ### Response
 
 The Account user object.
 
-{% partial file="objects/account-user.md" variables={properties:false, partialCode:true} /%}
-
----
+<!--@include: ./includes/objects/partials/account-user.md-->
 
 ## Delete a user
 
-Deleting an account user does not delete a user from the system. It deletes the account user relationship. 
+Deleting an account user does not delete a user from the system. It deletes the account user relationship.
 
 ### Request
 
-```shell
+```sh
 DELETE /v1/account/users/:user_id
 ```
 
@@ -186,20 +124,17 @@ DELETE /v1/account/users/:user_id
 
 The ID of the deleted account user.
 
-```js
+```json
 {
   "id": "usr_1234567890"
 }
 ```
 
----
-
 ## Roles collection
-
 
 The app schema contains roles relevant to the application version. The `roles.distribution[session.account.version_id]` is an array of role IDs and the `roles.list` contains the role information.
 
-```js
+```json
 // app schema
 {
   ...
@@ -225,14 +160,11 @@ The app schema contains roles relevant to the application version. The `roles.di
 
 The following logic will provide data for a group of checkboxes when assigning roles.
 
-
-{% partial file="code/role-assignment.md" /%}
-
----
+<<< @/snippets/role-assignment.js
 
 ## The Account User object
 
 An object that represents the current relationship between an account and a user.
 
-{% partial file="objects/account-user.md" /%}
-
+<!--@include: ./includes/objects/account-user.md-->
+<!--@include: ./includes/objects/properties/account-user.md-->

@@ -46,7 +46,7 @@ Enhance core applications by integrating the functionality required to meet appl
 | `Taxonomies` [1] | Manage categorized data. | |
 | `Timers` [1] | Run scheduled scripts. | |
 | `Tips` [1] | Provide UI tips. | |
-| `Versions` | Unlimited domain [versioning](/versions). | TBD |
+| `Versions` | Unlimited application feature [versioning](/versions). | TBD |
 
 
 _[1] Module in development for future release._

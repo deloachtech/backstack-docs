@@ -1,21 +1,12 @@
----
-title: Invoice
-nextjs:
-  metadata:
-    title: Invoice
-    description: The invoice object.
----
-
+# Invoices
 
 todo
 
-
 ## The Invoice object
 
-{% partial file="objects/invoice.md" /%}
+<!--@include: ./includes/objects/invoice.md-->
+<!--@include: ./includes/objects/properties/invoice.md-->
 
-
----
 
 ## Invoice items
 

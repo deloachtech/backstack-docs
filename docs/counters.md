@@ -1,24 +1,14 @@
----
-title: Counters
-nextjs:
-  metadata:
-    title: Counters
-    description: Understanding counters.
----
+# Counters
 
 Counters are integer-based values stored for account-specific statistics. (For instance, tracking how often an account uses a feature.)
-
----
 
 ## How it works
 
 Counters are defined in the Backstack dashboard and transactions are implemented in your application codebase. The current `session.account.counters[id]` contains an aggregate of the transacted values.
 
-{% callout %}
-Counters can be configured to be time-based, allowing for aggregate totals for the past _n_ days.
-{% /callout %}
-
----
+::: info 
+Counters can be configured to be time-based, allowing for aggregate totals for the past _n_ days. 
+:::
 
 ## Codebase implementation
 
@@ -31,7 +21,7 @@ if(session.account.counters.foo-downloads === 10)
   <button>Get More Foos</button>
 else
   <button onClick="downloadFoo()">Download Foo</button>
-  
+
 function downloadFoo() {
   const result = await processDownload('Foo');
   if(result.success) {
@@ -43,32 +33,23 @@ function downloadFoo() {
 
 The `updateFooDownloads()` in the example code above would update the counter.
 
-```shell
+```sh
 POST /v1/account/counters
 {
   "id": "foo-downloads"
 }
 ```
 
-{% table %}
-* Parameter
-* Type
-* Description
----
-* `id`
-* Required string
-* The counter ID.
----
-* `integer`
-* Optional integer
-* A positive or negative integer (e.g. 12345) you want added to the existing total. If empty the value of 1 will be used.
-{% /table %}
+| Parameter | Type | Description |
+| --- | --- | --- |
+| `id` | Required string | The counter ID. |
+| `integer` | Optional integer | A positive or negative integer (e.g. 12345) you want added to the existing total. If empty the value of 1 will be used. |
 
 ### Response
 
-The [Session object](/docs/sessions) is updated with the counter total value.
+The [Session object](/sessions) is updated with the counter total value.
 
-```js
+```json
 // session object
 {
   ...
@@ -82,13 +63,11 @@ The [Session object](/docs/sessions) is updated with the counter total value.
 }
 ```
 
----
-
 ## Subtracting values
 
 Use negative integers to offset existing values.
 
-```shell
+```sh
 POST /v1/account/counters
 {
   "id": "foo-downloads",
@@ -96,22 +75,14 @@ POST /v1/account/counters
 }
 ```
 
----
-
 ## Resetting counters
 
 Post an `action` with the value `reset` to reset a counter value to zero.
 
-```shell
+```sh
 POST /v1/account/counters
 {
   "id": "foo-downloads",
   "action": "reset"
 }
 ```
-
-
-
-
-
-

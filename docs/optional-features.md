@@ -1,10 +1,4 @@
----
-title: Optional features
-nextjs:
-  metadata:
-    title: Optional features
-    description: Subscription based application functionality.
----
+# Optional Features
 
 
 Features can be independently offered, providing additional account-level options beyond the current version functionality. Use optional features for offering unique functionality that might not be suitable for all accounts in the version schema.
@@ -30,8 +24,6 @@ if(hasAccess('widgets:c'))
   <button>Create Widget</button>
 ```
 
----
-
 ## Account settings
 
 The current account optional feature subscriptions are listed in the `session` object.
@@ -50,9 +42,6 @@ The current account optional feature subscriptions are listed in the `session` o
   ...
 }
 ```
-
-
----
 
 ## Available optional features 
 
@@ -83,45 +72,25 @@ The optional features available for the current account are defined in the appli
 }
 ```
 
-{% table %}
-* Parameter
-* Type
-* Description
----
-* `optional_features.distribution`
-* array
-* Keys are version ids and values are optional feature IDs.
----
-* `optional_features.distribution[version_id]`
-* array
-* Optional feature IDs available for the version ID.
----
-* `optional_features.list`
-* array
-* Keys are feature IDs and values are the features data.
----
-* `optional_features.list[feature_id].title`
-* string
-* The title of the feature.
----
-* `optional_features.list[feature_id].description`
-* string
-* The features description.
-{% /table %}
-
----
+| Parameter | Type | Description |
+| --- | --- | --- |
+| `optional_features.distribution` | Array | Keys are version ids and values are optional feature IDs. |
+| `optional_features.distribution[version_id]` | Array | Optional feature IDs available for the version ID. |
+| `optional_features.list` | Array | Keys are feature IDs and values are the features data. |
+| `optional_features.list[feature_id].title` | String | The title of the feature. |
+| `optional_features.list[feature_id].description` | String | The features description. |
 
 ## Toggling optional features activation
 
 If the accounts version has optional features available, you'll want to offer methods for activating/deactivating them on your page.
 
-{% partial file="code/optional-features.md" /%}
+<!--@include: ./includes/optional-features.md-->
 
 Then post the selected feature id to the API to toggle its active status.
 
 ### Request
 
-```shell
+```sh
 POST /v1/account/optional-features/:id
 ```
 
@@ -138,12 +107,11 @@ POST /v1/account/optional-features/:id
 }
 ```
 
----
-
 
 ## Monetizing optional features
 
-{% partial file="auto-invoiced-fees.md" /%}
+<!--@include: ./includes/auto-invoiced-fees.md-->
 
-See [invoicing-accounts](/docs/account-invoicing) for additional information.
+
+See [invoicing-accounts](/account-invoicing) for additional information.
 

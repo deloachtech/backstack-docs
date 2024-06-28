@@ -1,21 +1,13 @@
----
-title: Timezones
-nextjs:
-  metadata:
-    title: Timezones
-    description: The Timezone object.
----
+# Timezones
 
 The API uses structured timezone data for all timestamped computations.
 
 
----
 
 ## The Timezone object
 
-{% partial file="objects/timezone.md" /%}
-
----
+<!--@include: ./includes/objects/timezone.md-->
+<!--@include: ./includes/properties/timezone.md-->
 
 ## Read timezone
 
@@ -23,7 +15,7 @@ Retrieves the timezone object for the current `session.account`.
 
 ### Request
 
-```js
+```sh
 GET /v1/static/timezone
 ```
 
@@ -31,10 +23,8 @@ GET /v1/static/timezone
 
 The Timezone object.
 
-{% partial file="objects/timezone.md" variables={properties:false, partialCode:true} /%}
+<!--@include: ./includes/objects/partials/timezone.md-->
 
-
----
 
 ## Enumerated timezones
 
@@ -44,13 +34,13 @@ Timezones are provided for the country of the current `session.account`.
 
 ### Request
 
-```shell
+```sh
 GET /v1/static/timezones/enumerated
 ```
 
 ### Response
 
-```js
+```json
 [
   {
     "id": "America\/Chicago",
@@ -64,14 +54,14 @@ Optionally, provide a custom value for the `id` and/or `title` property names in
 
 ### Request
 
-```shell
+```sh
 GET /v1/static/timezones/enumerated
 ?id=value&title=label
 ```
 
 ### Response
 
-```js
+```json
 [
   {
     "value": "America\/Chicago",

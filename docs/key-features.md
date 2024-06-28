@@ -1,6 +1,9 @@
+
+
 # Key Features
 
-We'll keep it concise with no distractions.
+TODO
+
 
 
 ## What it does
@@ -22,13 +25,11 @@ Backstack manages backend functionality and data infrastructure for an expanding
 
 Backstack utilizes pre-configured application schemas (via the dashboard), JSON Web Tokens (JWT), HttpOnly cookies, and API-managed user sessions. This combination provides dynamically compiled, user-specific values for seamless processing within your codebase.
 
-
-```shell
+```sh
 GET /v1/auth/session
 ```
 
-
-```shell
+```sh
 HTTP/2.0 200 OK
 ...
 Set-Cookie: BackstackJWT=emn367db...; Secure; HttpOnly
@@ -40,17 +41,18 @@ Content-Type: application/json
     ...
   },
   "auth": false,
-  "signal": "login",
   ...
 }
 ```
 
+You have the flexibility to integrate features incrementally, ensuring a smooth and controlled transition without disrupting your current workflow.
 
-With Backstack, you have the flexibility to integrate features incrementally, ensuring a smooth and controlled transition without disrupting your current workflow.
+
 
 ## Who it's for
 
-Backstack is designed for developers for integration into their existing codebases.
+Backstack is designed for developers for integration into their existing codebase.
+
 
 
 ## What it doesn't do

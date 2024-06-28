@@ -1,15 +1,7 @@
----
-title: Signing up
-nextjs:
-  metadata:
-    title: Signing up
-    description: Workflow for signing up a new account.
----
+# Signing Up
 
 Generate a new account and its first user.
 
-
----
 
 ## How it works
 
@@ -18,18 +10,15 @@ Submit the new account data to the API for processing. An activation email is se
 ![Images](/images/diagrams/signup.svg)
 
 
-{% callout %}
+::: tip
 You should offer your terms and conditions on your applications signup-url (the emails landing page). 
-{% /callout %}
+:::
 
----
 
 ## Prerequisites
 
 Your application must have a sign-up URL defined in the dashboard settings. This URL serves as the base activation endpoint for the new accounts email link.
 
-
----
 
 ## Initiate the signup
 
@@ -37,7 +26,7 @@ Creates the sign-up record and sends an activation email on behalf of your appli
 
 ### Request
 
-```shell
+```sh
 POST /v1/auth/signup
 {
   "domain_id": "dom_1234567890"
@@ -50,54 +39,28 @@ POST /v1/auth/signup
 }
 ```
 
-{% table %}
-* Parameter
-* Type
-* Description
----
-* `domain_id`
-* Required string
-* The domain ID for the new account.
----
-* `account_title`
-* Required string
-* The title for the new account.
----
-* `name`
-* Required string
-* The name of the person for which the account will be created.
----
-* `username`
-* Optional string
-* The username for logging into the new account. Usernames must be at least 8 characters and cannot be the `password`. If empty, the API will create one using the `name` submitted, and it will be noted in the activation email.
----
-* `password`
-* Optional string
-*  The password for logging into the new account. Passwords must be at least 8 characters and cannot be the `username`. If empty, the API will generate one, and it will be noted in the activation email.
----
-* `email`
-* Required string
-* The email address of the person for which the new account is being created. The activation email will be sent to this address.
----
-* `country_id`
-* Required string
-* The [country](/docs/countries) id the new account will be created under.
-{% /table %}
-
+| Parameter | Type | Description |
+| --- | --- | --- |
+| `domain_id` | Required string | The domain ID for the new account. |
+| `account_title` | Required string | The title for the new account. |
+| `name` | Required string | The name of the person for which the account will be created. |
+| `username` | Optional string | The username for logging into the new account. Usernames must be at least 8 characters and cannot be the `password`. If empty, the API will create one using the `name` submitted, and it will be noted in the activation email. |
+| `password` | Optional string | The password for logging into the new account. Passwords must be at least 8 characters and cannot be the `username`. If empty, the API will generate one, and it will be noted in the activation email. |
+|  `email` | Required string | The email address of the person for which the new account is being created. The activation email will be sent to this address. |
+|  `country_id` | Required string | The [country](/countries) id the new account will be created under. |
 
 ### Response
 
 This token is for your information only. The activation email contains a link with this value.
 
-```js
+```json
 {
   "token": "co84fjo3irho2eihcf37hfou"
 }
 ```
 
-{% partial file="error-response.md" /%}
+<!--@include: ./includes/error-response.md-->
 
----
 
 
 ## Activate the sign-up
@@ -110,29 +73,22 @@ var token = new URLSearchParams(window.location.hash).get('token');
 
 ### Request
 
-```shell
+```sh
 POST /v1/auth/signup-activation
 {
   "token": "co84fjo3irho2eihcf37hfou"
 }
 ```
 
-{% table %}
-* Parameter
-* Type
-* Description
----
-* `token`
-* Required string
-* The token provided in the email activation link.
-{% /table %}
-
+| Parameter | Type | Description |
+| --- | --- | --- |
+| `token` | Required string | The token provided in the email activation link. |
 
 ### Response
 
 The response will include the associated IDs for your information. You can begin the [login process]('docs/login) with the new user.
 
-```javascript
+```json
 {
   "account_id": "act_1234567890",
   "user_id": "usr_1234567890",
@@ -141,41 +97,23 @@ The response will include the associated IDs for your information. You can begin
 }
 ```
 
-{% table %}
-* Property
-* Type
-* Description
----
-* `account_id`
-* String
-* The new account ID.
----
-* `account_id`
-* String
-* The new user ID.
----
-* `domain_id`
-* String
-* The domain ID.
----
-* `version_id`
-* String
-* The version ID.
----
-{% /table %}
+
+| Parameter | Type | Description |
+| --- | --- | --- |
+| `account_id` | String | The new account ID. |
+| `user_id` | String | The new user ID. |
+| `domain_id` | String | The domain ID. |
+| `version_id` | String | The version ID. |
 
 
+<!--@include: ./includes/error-response.md-->
 
-
-{% partial file="error-response.md" /%}
-
----
 
 ## Signup domains collection
 
-The [app schema object](/docs/app-schemas) contains the domains available for signup.
+The [app schema object](/app-schemas) contains the domains available for signup.
 
-```js
+```json
 // app schema object
 {
   ...
@@ -192,5 +130,6 @@ The [app schema object](/docs/app-schemas) contains the domains available for si
 
 Provide a select using the following logic. Optionally, show the domain description and help signup with the select onChange() event.
 
-{% partial file="code/signup-domain.md" /%}
+<!--@include: ./includes/signup-domain.md-->
+
 

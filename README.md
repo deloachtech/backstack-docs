@@ -5,7 +5,7 @@ Documentation for the backstack service.
 ## Contributing
 
 ```bash
-git clone git@github.com:backstack-com/backstack.com.git
+git clone git@github.com:deloachtech/backstack-com.git
 ```
 
 To get started, install the npm dependencies:
@@ -33,4 +33,4 @@ Then create a pull request with your changes.
 
 ## License
 
-This project is not licensed under an open-source license and is the intellectual property of Aaron DeLOach. The source is available only as an educational resource and to accept fixes for minor mistakes.
+This project is not licensed under an open-source license and is the intellectual property of DeLoach Tech LLC. The source is available only as an educational resource and to accept fixes for minor mistakes.
