@@ -1,6 +1,6 @@
-# Backstack Docs
+# Backstack
 
-Documentation for the backstack service.
+Website and documentation for the backstack service.
 
 ## Contributing
 
