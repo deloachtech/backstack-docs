@@ -6,12 +6,12 @@ export default defineConfig({
     title: "Backstack ~ v-0.9.1",
     description: "Backend resources for your codebase.",
     head: [
-        ['link', { rel: 'icon', href: '/images/favicon.svg', type: 'image/svg+xml' }]
+        ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }]
     ],
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
 
-        logo: { src: '/images/favicon.svg', width: 24, height: 24 },
+        logo: { src: '/favicon.svg', width: 24, height: 24 },
         nav: [
             { text: 'Docs', link: '/key-features' },
             { text: 'Pricing', link: '/pricing' }
