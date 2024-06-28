@@ -65,7 +65,7 @@ See the [optional feature workflow](/optional-features) for incorporating option
 
 <!--@include: ./includes/auto-invoiced-fees.md-->
 
-See [invoicing-accounts](/account-invoicing) for additional information.
+See [invoicing-accounts](/invoicing-accounts) for additional information.
 
 ## Identifying codebase features
 

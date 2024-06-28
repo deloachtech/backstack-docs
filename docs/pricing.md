@@ -10,8 +10,8 @@ Create unlimited applications with the core feature set at no cost.
 | Feature| Description | Usage | Price |
 | ------ | ----------- | ----- | ----: |
 | `Authentication` | Complete authentication functionality, including login, signup, password resetting, and associated transactional emails. | Unlimited | Free |
-| `Sessions` | Complete [session management](/session-management) using the API and [application schemas](/app-schemas). | Unlimited | Free |
-| `Domains` | [Domain](/domains) based application entry points. | Up to 3 | Free |
+| `Sessions` | Complete [session management](/sessions) using the API and [application schemas](/app-schemas). | Unlimited | Free |
+| `Domains` | [Domain](/architecture#domains) based application entry points. | Up to 3 | Free |
 | `Versioning` | Domain based application [feature versioning](/versions). | Up to 3 for each domain | Free |
 | `Access Control` | Complete [control of access](/access-control) to codebase features. | Unlimited | Free |
 | `API Resources` | API managed accounts, users, account users, RBAC and all associated transactional emails. | Unlimited | Free |
@@ -37,10 +37,10 @@ Enhance core applications by integrating the functionality required to meet appl
 | ------ | ----------- | ----: |
 | `Alerts` [1] | Generate user alerts. | |
 | `Counters` | Create transactional values for anything. See [counters](/counters) for more information. | TBD |
-| `Domains` | Unlimited [domains](/domains). | TBD |
+| `Domains` | Unlimited [domains](/architecture#domains). | TBD |
 | `Monetization` | [Monetize](/monetization) application functionality. | TBD |
-| `Networks` | Allow accounts to create B2B [networks](/docs/networks). | TBD |
-| `Network Fees` | Allow networks to implement [fee-based revenue sharing](/account-networking). | TBD |
+| `Networks` | Allow accounts to create B2B [networks](/networks). | TBD |
+| `Network Fees` | Allow networks to implement [fee-based revenue sharing](/networks). | TBD |
 | `Optional Features` | Provide account-based [optional features](/optional-features) beyond versioning functionality. | TBD |
 | `Stripe` [1] | Integrate Stripe to automate monetization methods. | |
 | `Taxonomies` [1] | Manage categorized data. | |

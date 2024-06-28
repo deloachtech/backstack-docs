@@ -25,7 +25,7 @@ Networks operate on a domain basis and are configured through the Backstack dash
 
 When a parent account initiates a networked relationship, the process begins by sending a system-generated email to the child account for activation. This network invitation includes a link to your activation page with a token in the request.
 
-Create a page for an existing account to provide the information below. Use the [enumerated domains](/domains) and the [enumerated countries](/countries) (optional) to create dropdowns for selecting those values.
+Create a page for an existing account to provide the information below. Use the `domains` data in the `app-schema` and the [enumerated countries](/countries) (optional) to create dropdowns for selecting those values.
 
 ### Request
 

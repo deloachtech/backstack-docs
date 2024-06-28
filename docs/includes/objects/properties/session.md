@@ -29,6 +29,6 @@
 | `user.email` | String | The users email address. |
 | `user.avatar` | String | URL for the avatar image the user has provided for their profile. |
 | `user.roles` | Array | Role IDs the user has been assigned. |
-| `access` | Array | An array of access control for the current user. Array keys are [feature](/docs/features) IDs and values are CRUD permissions granted. See the [access control](/access-control) page for more information. |
+| `access` | Array | An array of access control for the current user. Array keys are [feature](/features) IDs and values are CRUD permissions granted. See the [access control](/access-control) page for more information. |
 | `access_signature` | String | A signature of the current access control values. Use this value to check if cached access control has changed. See [caching access](#) for additional information. |
 | `alerts` | Array | System and application alerts for display to the user. Array keys ate the alert IDs and the values are the texts to display. You can map the keys to routes for creating hyperlinks to pages. |

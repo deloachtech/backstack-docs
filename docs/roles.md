@@ -8,7 +8,7 @@ As a developer, you won't need to worry about RBAC within your codebase. These r
 
 ## Defining roles
 
-Roles are fully managed using the Backstack dashboard, including assigning permission-based [feature](/docs/features) access.
+Roles are fully managed using the Backstack dashboard, including assigning permission-based [feature](/features) access.
 
 
 ::: tip

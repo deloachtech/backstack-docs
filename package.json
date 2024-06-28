@@ -1,7 +1,7 @@
 {
-  "name": "backstack-docs",
+  "name": "backstack-com",
   "version": "0.0.0",
-  "description": "backstack docs.",
+  "description": "Backstack website and docs.",
   "type": "module",
   "scripts": {
     "dev": "vitepress dev docs",

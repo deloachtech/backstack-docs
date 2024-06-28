@@ -113,5 +113,5 @@ POST /v1/account/optional-features/:id
 <!--@include: ./includes/auto-invoiced-fees.md-->
 
 
-See [invoicing-accounts](/account-invoicing) for additional information.
+See [invoicing-accounts](/invoicing-accounts) for additional information.
 

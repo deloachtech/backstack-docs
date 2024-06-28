@@ -86,7 +86,7 @@ POST /v1/auth/signup-activation
 
 ### Response
 
-The response will include the associated IDs for your information. You can begin the [login process]('docs/login) with the new user.
+The response will include the associated IDs for your information. You can begin the [login process](/login) with the new user.
 
 ```json
 {

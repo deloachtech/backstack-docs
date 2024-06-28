@@ -27,7 +27,7 @@ Versions are fully managed using the Backstack dashboard, including their assign
 <!--@include: ./includes/auto-invoiced-fees.md-->
 
 
-See [invoicing-accounts](/account-invoicing) for additional information.
+See [invoicing-accounts](/invoicing-accounts) for additional information.
 
 ## Allowing accounts to select versions
 
