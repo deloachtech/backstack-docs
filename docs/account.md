@@ -17,7 +17,7 @@ Retrieves the current session Account object.
 ### Request
 
 ```sh
-GET /v1/auth/account
+GET /v1/account
 ```
 
 ### Response
@@ -35,7 +35,7 @@ Updates the current session Account object.
 ### Request
 
 ```sh
-POST /v1/auth/account
+POST /v1/account
 {
   "title": "Acme Corp"
   ...
@@ -69,7 +69,7 @@ Deletes an account and expires the session.
 ### Request
 
 ```sh
-DELETE /v1/auth/account
+DELETE /v1/account
 ```
 
 ### Response

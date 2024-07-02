@@ -21,7 +21,7 @@ Retrieves the current session user information.
 ### Request
 
 ```sh
-GET /v1/auth/user
+GET /v1/user
 ```
 
 ### Response
@@ -34,7 +34,7 @@ The User object.
 ### Request
 
 ```sh
-POST /v1/auth/user
+POST /v1/user
 {
   "name": "Jason Doe",
   ...
