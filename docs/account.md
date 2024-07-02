@@ -24,8 +24,8 @@ GET /v1/auth/account
 
 The Account object.
 
-:::
-tip You can read the `session.account` to get an extended version of the account object. 
+::: tip 
+You can read the `session.account` to get an extended version of the account object. 
 :::
 
 ## Update an account

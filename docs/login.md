@@ -39,7 +39,7 @@ If the user is a member of multiple accounts the `session.auth` value will remai
 
 ## Selecting accounts
 
-If a user is a member of multiple accounts, the response will contain a `select_account` value with associated data for your codebase to react upon. The `auth` value remains `false` until an account has been activated.
+If a user is a member of multiple accounts, the response will contain a `select_account` value with associated data for your codebase to react upon. The `session.auth` value remains `false` until an account has been activated.
 
 ```js
 // login response
