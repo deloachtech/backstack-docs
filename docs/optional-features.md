@@ -1,10 +1,8 @@
 # Optional Features
 
-
 Features can be independently offered, providing additional account-level options beyond the current version functionality. Use optional features for offering unique functionality that might not be suitable for all accounts in the version schema.
 
 ![Images](/images/diagrams/optional-features.svg)
-
 
 When defining version functionality, features can be designated as optional. If a feature is offered optionally, the account needs to subscribe to the feature to access its functionality.
 
@@ -15,13 +13,11 @@ Optional feature constraints are computed in the compiled session environment, a
 
 // The version has the widget feature included.
 
-if(hasAccess('widgets:c'))
-  <button>Create Widget</button>
-  
+if (hasAccess("widgets:c")) <button>Create Widget</button>;
+
 // The version has the widget feature as an option. (No difference in logic.)
 
-if(hasAccess('widgets:c'))
-  <button>Create Widget</button>
+if (hasAccess("widgets:c")) <button>Create Widget</button>;
 ```
 
 ## Account settings
@@ -43,42 +39,20 @@ The current account optional feature subscriptions are listed in the `session` o
 }
 ```
 
-## Available optional features 
+## Available optional features
 
+TODO: Description
 
-The optional features available for the current account are defined in the application schema `optional_features.distribution[session.account.version_id]` array.
+### Request
 
-```js
-// app schema
-{
-  ...
-  "optional_features": {
-    "distribution": {
-      "ver_1234567890": [
-        "payments",
-        ...
-      ],
-      ...
-    },
-    "list": {
-      "account-users": {
-        "title": "Account user management",
-        "description": "Manage users and RBAC distribution." 
-      }
-      ...
-    }
-  },
-  ...
-}
+```sh
+GET /v1/account/optional-features
 ```
 
-| Parameter | Type | Description |
-| --- | --- | --- |
-| `optional_features.distribution` | Array | Keys are version ids and values are optional feature IDs. |
-| `optional_features.distribution[version_id]` | Array | Optional feature IDs available for the version ID. |
-| `optional_features.list` | Array | Keys are feature IDs and values are the features data. |
-| `optional_features.list[feature_id].title` | String | The title of the feature. |
-| `optional_features.list[feature_id].description` | String | The features description. |
+### Response
+
+TODO: API response
+
 
 ## Toggling optional features activation
 
@@ -96,22 +70,10 @@ POST /v1/account/optional-features/:id
 
 ### Response
 
-```js
-// latest optional feature history record
-{
-  "id": "afh_1234567890",
-  "account_id": "acc_1234567890",
-  "feature_id": "payments",
-  "timestamp": 1703705293,
-  "active": true
-}
-```
-
+TODO: API Response
 
 ## Monetizing optional features
 
 <!--@include: ./includes/auto-invoiced-fees.md-->
 
-
 See [invoicing-accounts](/invoicing-accounts) for additional information.
-
