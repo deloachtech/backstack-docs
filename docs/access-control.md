@@ -63,46 +63,56 @@ Create a function in your preferred language to validate feature access based on
 
 ```js
 // Example access control function
+//
+// Usage:
+// const requiredAccess = "*"; // Grant access to all users
+// const sessionAccess = {feature1: "crud", feature2: "cr"};
+//
+// console.log(hasAccess('*', session.access)); // Output: true
+// console.log(hasAccess('account-users:NotInAccessControl', session.access)); // Output: false
+// console.log(hasAccess('unknown-feature:*', session.access)); // Output: false
 
-function hasAccess(controlString, accessGranted) {
-  // Check if the controlString is "*"
-  if (controlString === "*") {
-    return true; // Grant access to all users
+export function hasAccess(requiredAccess, sessionAccess) {
+  // Check if the requiredAccess is "*"
+  if (requiredAccess === "*") {
+      return true; // Grant access to all users
   }
 
-  // Split the control string into individual features and their permissions
-  const controlList = controlString.split(",");
+  if (requiredAccess?.length > 0) {
 
-  // Iterate through each feature in the control string
-  for (const control of controlList) {
-    // Split each feature and its permissions
-    const [feature, permissions] = control.split(":");
+      // Split the control string into individual features and their permissions
+      const controlList = requiredAccess.split(',');
 
-    // Check if the feature exists in the accessGranted object
-    if (accessGranted.hasOwnProperty(feature)) {
-      // If permissions is "*", consider it as a wildcard and return true
-      if (permissions === "*") {
-        return true;
+      // Iterate through each feature in the control string
+      for (const control of controlList) {
+
+          // requiredAccess could be "*,*,*" (e.g. combining '*' constants)
+          if (control === "*") {
+              return true; // Grant access to all users
+          }
+
+          // Split each feature and its permissions. If no permissions assume any.
+          const [feature, permissions = "*"] = control.split(':');
+
+          // Check if the feature exists in the sessionAccess object
+          if (sessionAccess.hasOwnProperty(feature)) {
+              // If permissions is "*", consider it as a wildcard and return true
+              if (permissions === "*") {
+                  return true;
+              }
+
+              // Check if the user's permissions include any of the required permissions
+              for (const permission of permissions) {
+                  if (sessionAccess[feature].includes(permission)) {
+                      // If any permission is granted, return true
+                      return true;
+                  }
+              }
+          }
       }
-
-      // Check if the user's permissions include any of the required permissions
-      for (const permission of permissions) {
-        if (accessGranted[feature].includes(permission)) {
-          // If any permission is granted, return true
-          return true;
-        }
-      }
-    }
   }
 
   // If none of the features have been found or none of the permissions match, return false
   return false;
 }
-
-// Example usage:
-const controlString = "*"; // Grant access to all users
-const accessGranted = { feature1: "crud", feature3: "cr" };
-
-const userHasAccess = hasAccess(controlString, accessGranted);
-console.log(userHasAccess); // Output: true
 ```
