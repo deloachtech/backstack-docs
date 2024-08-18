@@ -4,7 +4,7 @@ Considered the flagship aspect of the Backstack architecture, extremely simplifi
 
 ## How it works
 
-The computed `access` values specific to the active user are included in the current [Session object](/sessions) for your processing.
+The computed `access` values specific to the active user are included in the current [Session object](sessions) for your processing.
 
 ::: tip
 Backstack employs the CRUD permission methodology, which stands for Create, Read, Update, and Delete – representing the fundamental operations applicable to any model. 

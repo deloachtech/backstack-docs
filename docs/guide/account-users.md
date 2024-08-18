@@ -1,7 +1,7 @@
 
 # Account Users
 
-[Accounts](/accounts) can have many [users](/users). Each having different access to resources.
+[Accounts](accounts) can have many [users](users). Each having different access to resources.
 
 An account user represents the `session.user` and the access control privileges provided by the `session.account`.
 
@@ -17,7 +17,7 @@ Your application must have the log-in URL defined in the dashboard settings. Thi
 
 ## Create A User
 
-Submit the new user data to the API for processing. An activation email is sent to the new user with a link to your log-in page to begin the [log-in process](/login).
+Submit the new user data to the API for processing. An activation email is sent to the new user with a link to your log-in page to begin the [log-in process](login).
 
 ### Request
 
@@ -81,7 +81,7 @@ GET /v1/account/users
 
 ## Update a user
 
-Updates user values that are related to the account relationship. See the [user](/user) documentation for information on updating the session user.
+Updates user values that are related to the account relationship. See the [user](user) documentation for information on updating the session user.
 
 ### Request
 

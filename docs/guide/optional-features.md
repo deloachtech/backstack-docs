@@ -76,4 +76,4 @@ TODO: API Response
 
 <!--@include: includes/to-invoiced-fees.md-->
 
-See [invoicing-accounts](/invoicing-accounts) for additional information.
+See [invoicing-accounts](invoicing-accounts) for additional information.

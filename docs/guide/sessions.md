@@ -8,7 +8,7 @@ These objects receive dynamic updates through the outcomes of various processes.
 
 ## How it works
 
-The initial session object is provided during the [log in process](/login).
+The initial session object is provided during the [log in process](login).
 
 We recommend storing the session object on the browser itself, and updating it based on your applications use load and functionality (e.g. every _n_ minutes). The API monitors and caches environmental changes, so you can efficiently update it on every request if desired.
 

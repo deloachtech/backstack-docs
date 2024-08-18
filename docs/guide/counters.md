@@ -47,7 +47,7 @@ POST /v1/account/counters
 
 ### Response
 
-The [Session object](/sessions) is updated with the counter total value.
+The [Session object](sessions) is updated with the counter total value.
 
 ```json
 // session object

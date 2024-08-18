@@ -31,7 +31,7 @@ The `session.account.counters` is an array of aggregated values for the current 
 }
 ```
 
-See the [counters resource](/counters) for more information.
+See the [counters resource](counters) for more information.
 
 ## Account stats
 
@@ -52,4 +52,4 @@ The `session.account.stats` array contains system-generated values you can use f
 }
 ```
 
-See the [account stats resource](/account-stats) for more information.
+See the [account stats resource](account-stats) for more information.

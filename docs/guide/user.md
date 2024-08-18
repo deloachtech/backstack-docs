@@ -11,7 +11,7 @@ The current session user.
 
 ## Create a user
 
-Users are _added_ to accounts with assigned roles. See the [account user workflow](/account-users) for more information.
+Users are _added_ to accounts with assigned roles. See the [account user workflow](account-users) for more information.
 
 
 ## Read a user
@@ -53,7 +53,7 @@ POST /v1/user
 <!--@include: includes/update-note.md-->
 
 
-See the [account user workflow](/account-users) for updating user information related to the account relationship (e.g. roles).
+See the [account user workflow](account-users) for updating user information related to the account relationship (e.g. roles).
 
 ### Response
 
@@ -62,7 +62,7 @@ The User object.
 
 ## Delete a user
 
-Deletes the current user and all [account user](/account-users) relationships, then terminates the session.
+Deletes the current user and all [account user](account-users) relationships, then terminates the session.
 
 
 

@@ -45,7 +45,7 @@ Domains represent the highest level of application categorization. Each account 
 
 ![Images](images/diagrams/domains.svg)
 
-Domains are managed using the Backstack dashboard. They're assigned to an account during the sign-up process. See the [sign-up workflow](/signup) for more information.
+Domains are managed using the Backstack dashboard. They're assigned to an account during the sign-up process. See the [sign-up workflow](signup) for more information.
 
 ## Versions
 
@@ -53,13 +53,13 @@ Versions are containers of features, organizing account-level application functi
 
 ![Images](images/diagrams/versions.svg)
 
-Versions are managed using the Backstack dashboard. The default version is assigned during the sign-up process, and the account upgrades/downgrades using your UI. See the [versions](/versions) page for more information.
+Versions are managed using the Backstack dashboard. The default version is assigned during the sign-up process, and the account upgrades/downgrades using your UI. See the [versions](versions) page for more information.
 
 ## Features
 
 Features are version-based, access-controlled containers of fine-grained application functionality. Once defined, they can be used in any of your applications.
 
-See the [features](/features) page for more information.
+See the [features](features) page for more information.
 
 ![Images](images/diagrams/features.svg)
 
@@ -71,7 +71,7 @@ Features can be independently offered, providing additional account-level option
 
 ![Images](images/diagrams/optional-features.svg)
 
-Optional features are managed using the Backstack dashboard. Accounts subscribe/unsubscribe to them using your UI. See the [optional features workflow](/optional-features) for more information.
+Optional features are managed using the Backstack dashboard. Accounts subscribe/unsubscribe to them using your UI. See the [optional features workflow](optional-features) for more information.
 
 ## Account networks
 

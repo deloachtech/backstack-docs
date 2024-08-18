@@ -11,8 +11,8 @@
 | `url` | String | The URL for the account website. |
 | `contact_name` | String | The contact name for the account. |
 | `contact_email` | String | The contact persons email address. |
-| `timezone_id` | String | The account [timezone](/timezones) ID. |
-| `country_id` | String | Required [country](/countries) ID. |
+| `timezone_id` | String | The account [timezone](timezones) ID. |
+| `country_id` | String | Required [country](countries) ID. |
 | `is_app_account` | Boolean | Whether the account created the app |
 | `domain_id` | String | The domain ID for which the account was created. |
 | `version_id` | String | The current `domain.version` for which the account is operating. |

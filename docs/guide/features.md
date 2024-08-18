@@ -4,13 +4,13 @@ Regardless of the level of functionality your application utilizes, _everything_
 
 As a developer, you won't need to concern yourself with domains, versioning, RBAC, SaaS, or other access schemas. You'll simply designate portions of your codebase by the functionality it provides, define a label, and assign CRUD permissions.
 
-See the [feature architecture](/architecture#features) for more information.
+See the [feature architecture](architecture#features) for more information.
 
 ## Defining features
 
 Use the Backstack dashboard to define codebase features.
 
-Identify feature labels based on common codebase logic. Note that CRUD (`c`reate, `r`ead, `u`pdate, and `d`elete) permissions will be assigned [elsewhere](/access-control), and you'll be integrating feature access control throughout your codebase.
+Identify feature labels based on common codebase logic. Note that CRUD (`c`reate, `r`ead, `u`pdate, and `d`elete) permissions will be assigned [elsewhere](access-control), and you'll be integrating feature access control throughout your codebase.
 
 ```js
 if(hasAccess('feature1:*;feature2:cu'))
@@ -51,7 +51,7 @@ Creating domain-specific features is a common practice, and these features are l
 
 Grant permission-based feature access to roles using the Backstack dashboard. Once defined, these schemas are available for use on any application.
 
-See the [access control](/access-control) page for additional information.
+See the [access control](access-control) page for additional information.
 
 ## Optional features
 
@@ -59,17 +59,17 @@ Features can be independently offered, providing additional account-level option
 
 Using the Backstack dashboard, designate a feature as being optional when prescribing features to app versions. If a feature is offered optionally, the account needs to subscribe to the feature to access its functionality.
 
-See the [optional feature workflow](/optional-features) for incorporating optional features into your UI.
+See the [optional feature workflow](optional-features) for incorporating optional features into your UI.
 
 ## Monetizing optional features
 
 <!--@include: includes/auto-invoiced-fees.md-->
 
-See [invoicing-accounts](/invoicing-accounts) for additional information.
+See [invoicing-accounts](invoicing-accounts) for additional information.
 
 ## Identifying codebase features
 
-Your codebase already contains many features. Identifying them is simply a matter of wrapping existing code within access controlled `blocks` that will be enforced by your [access control function](/access-control).
+Your codebase already contains many features. Identifying them is simply a matter of wrapping existing code within access controlled `blocks` that will be enforced by your [access control function](access-control).
 
 Identifying features is the only requirement necessary to enforce every layer of the application environment. Backstack incorporates the application's domain, version and module settings when compiling the `session.access` values.
 

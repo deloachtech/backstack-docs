@@ -5,7 +5,7 @@ The login process authenticates an account user for the current session.
 
 ## How it works
 
-Submit the username and password to the API for processing. Upon successful authentication, the API will provide an authenticated [session object](/sessions).
+Submit the username and password to the API for processing. Upon successful authentication, the API will provide an authenticated [session object](sessions).
 
 ![Image](images/diagrams/login.svg)
 
@@ -31,7 +31,7 @@ POST /v1/auth/login
 
 ### Response
 
-The current [session object](/sessions).
+The current [session object](sessions).
 
 ::: warning
 If the user is a member of multiple accounts the `session.auth` value will remain `false` until an account is activated.
@@ -83,7 +83,7 @@ Then submit the selected account ID to the API to activate.
 
 ### Response
 
-The current [session object](/sessions).
+The current [session object](sessions).
 
 
 ## Log out
@@ -109,5 +109,5 @@ POST /v1/auth/logout
 }
 ```
 
-The current [session object](/sessions). The `auth` value will be `false`.
+The current [session object](sessions). The `auth` value will be `false`.
 

@@ -51,7 +51,7 @@ Invoices cannot be updated or deleted.
 
 <!--@include: includes/auto-invoiced-fees.md-->
 
-See [versions](/versions) and [version assignment workflow](/version-assignment) for additional information.
+See [versions](versions) and [version assignment workflow](version-assignment) for additional information.
 
 ## Custom invoice items
 
@@ -192,7 +192,7 @@ Backstack does not provide functionality for further management of account payme
 
 ### Webhook
 
-A webhook can be sent to a URL for you to process invoice payments. The payload will contain all [invoices](/invoices) due.
+A webhook can be sent to a URL for you to process invoice payments. The payload will contain all [invoices](invoices) due.
 
 ```js
 // webhook

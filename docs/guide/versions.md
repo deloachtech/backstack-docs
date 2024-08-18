@@ -4,12 +4,12 @@ App versions are containers of features, organizing account-level application fu
 
 ![Images](images/diagrams/versions.svg)
 
-See the [architecture](/architecture) page for additional information.
+See the [architecture](architecture) page for additional information.
 
 
 ## Creating versions
 
-Versions are fully managed using the Backstack dashboard, including their assignment to domains with prescribed feature access. Resulting configurations are included in the [app schema](/app-schemas) for use within your codebase.
+Versions are fully managed using the Backstack dashboard, including their assignment to domains with prescribed feature access. Resulting configurations are included in the [app schema](app-schemas) for use within your codebase.
 
 
 ## Example versioning
@@ -27,7 +27,7 @@ Versions are fully managed using the Backstack dashboard, including their assign
 <!--@include: includes/auto-invoiced-fees.md-->
 
 
-See [invoicing-accounts](/invoicing-accounts) for additional information.
+See [invoicing-accounts](invoicing-accounts) for additional information.
 
 ## Allowing accounts to select versions
 
@@ -36,7 +36,7 @@ Manage version configurations through the Backstack dashboard. Allow accounts to
 <!--@include: includes/version-list.md-->
 
 
-See the [version assignment workflow](/version-assignment) for incorporating account-based version management into your UI.
+See the [version assignment workflow](version-assignment) for incorporating account-based version management into your UI.
 
 
 ## The Version object

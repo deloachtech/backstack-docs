@@ -8,7 +8,7 @@ As a developer, you won't need to worry about RBAC within your codebase. These r
 
 ## Defining roles
 
-Roles are fully managed using the Backstack dashboard, including assigning permission-based [feature](/features) access.
+Roles are fully managed using the Backstack dashboard, including assigning permission-based [feature](features) access.
 
 
 ::: tip
@@ -32,7 +32,7 @@ The roles below can be applied to nearly any application.
 
 Grant permission-based feature access to roles using the Backstack dashboard. Once defined, these schemas are available for use on any application. 
 
-See the [access control](/access-control) page for additional information.
+See the [access control](access-control) page for additional information.
 
 
 ## Assigning roles to users
@@ -42,5 +42,5 @@ Manage your roles and feature access configurations through the Backstack dashbo
 <!--@include: includes/role-assignment.md-->
 
 
-See the [account users workflow](/account-users) for more information.
+See the [account users workflow](account-users) for more information.
 

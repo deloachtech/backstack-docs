@@ -120,7 +120,7 @@ POST /v1/auth/reset-password
 
 ### Response
 
-Upon success, the API will respond with the [User object](/user), and you can begin the user [log in process](/login).
+Upon success, the API will respond with the [User object](user), and you can begin the user [log in process](login).
 
 ```js
 // user object

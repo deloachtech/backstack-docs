@@ -8,7 +8,7 @@ The current session account.
 
 ## Create an account
 
-Accounts are created using the [sign-up](/signup) and [account network](/networks) workflows.
+Accounts are created using the [sign-up](signup) and [account network](networks) workflows.
 
 ## Read an account
 
@@ -53,8 +53,8 @@ POST /v1/account
 | `url` | Required string |  |
 | `contact_name` | Required string |  |
 | `contact_email` | Optional string |  |
-| `timezone_id` | Optional string | See the [timezones](/timezones) resource for more information. |
-| `country_id` | Required string | See the [countries](/countries) resource for more information. |
+| `timezone_id` | Optional string | See the [timezones](timezones) resource for more information. |
+| `country_id` | Required string | See the [countries](countries) resource for more information. |
 
 <!--@include: includes/update-note.md-->
 

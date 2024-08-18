@@ -47,7 +47,7 @@ POST /v1/auth/signup
 | `username` | Optional string | The username for logging into the new account. Usernames must be at least 8 characters and cannot be the `password`. If empty, the API will create one using the `name` submitted, and it will be noted in the activation email. |
 | `password` | Optional string | The password for logging into the new account. Passwords must be at least 8 characters and cannot be the `username`. If empty, the API will generate one, and it will be noted in the activation email. |
 |  `email` | Required string | The email address of the person for which the new account is being created. The activation email will be sent to this address. |
-|  `country_id` | Required string | The [country](/countries) id the new account will be created under. |
+|  `country_id` | Required string | The [country](countries) id the new account will be created under. |
 
 ### Response
 
@@ -86,7 +86,7 @@ POST /v1/auth/signup/activation
 
 ### Response
 
-The response will include the associated IDs for your information. You can begin the [login process](/login) with the new user.
+The response will include the associated IDs for your information. You can begin the [login process](login) with the new user.
 
 ```json
 {
@@ -111,7 +111,7 @@ The response will include the associated IDs for your information. You can begin
 
 ## Signup domains collection
 
-The [app schema object](/app-schemas) contains the domains available for signup.
+The [app schema object](app-schemas) contains the domains available for signup.
 
 ```json
 // app schema object
