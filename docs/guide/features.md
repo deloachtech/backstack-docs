@@ -1,4 +1,5 @@
 # Features
+<!--@include: includes/alpha-note.md-->
 
 Regardless of the level of functionality your application utilizes, _everything_ revolves around defining and implementing features. This method of access control serves numerous levels of functionality with a straightforward implementation.
 

@@ -1,5 +1,6 @@
 
 # Resetting Passwords
+<!--@include: includes/alpha-note.md-->
 
 Enable users to reset their passwords during the log in process.
 

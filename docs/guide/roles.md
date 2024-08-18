@@ -1,4 +1,5 @@
 # Roles
+<!--@include: includes/alpha-note.md-->
 
 A role serves as a container for permission-based application feature access. A single user may be assigned multiple roles, allowing access to various features.
 

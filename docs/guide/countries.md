@@ -1,4 +1,5 @@
 # Countries
+<!--@include: includes/alpha-note.md-->
 
 The API uses structured country data to perform geo-related computations.
 

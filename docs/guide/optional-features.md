@@ -1,4 +1,5 @@
 # Optional Features
+<!--@include: includes/alpha-note.md-->
 
 Features can be independently offered, providing additional account-level options beyond the current version functionality. Use optional features for offering unique functionality that might not be suitable for all accounts in the version schema.
 

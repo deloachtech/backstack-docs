@@ -1,10 +1,13 @@
 # Access Control
 
+<!--@include: includes/alpha-note.md-->
+
+
 Considered the flagship aspect of the Backstack architecture, extremely simplified access control can be achieved with minimal codebase intrusion across multiple layers of specifications simultaneously.
 
 ## How it works
 
-The computed `access` values specific to the active user are included in the current [Session object](sessions) for your processing.
+The computed `access` values specific for the active user are included in the current [Session object](sessions) for processing.
 
 ::: tip
 Backstack employs the CRUD permission methodology, which stands for Create, Read, Update, and Delete – representing the fundamental operations applicable to any model. 
@@ -15,7 +18,7 @@ Validating feature access is the only requirement necessary to enforce every lay
 ### Request
 
 ```sh
-GET v1/auth/session
+GET v1/app/session
 ```
 
 ### Response

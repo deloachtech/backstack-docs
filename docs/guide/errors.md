@@ -1,4 +1,5 @@
 # Errors
+<!--@include: includes/alpha-note.md-->
 
 The API uses conventional HTTP response codes to indicate the failure of a request. Codes in the `4xx` range indicate a request failed (i.e. a required parameter was omitted). Codes in the `5xx` range indicate a system error.
 

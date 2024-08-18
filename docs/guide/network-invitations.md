@@ -1,4 +1,5 @@
 # Network Invitation
+<!--@include: includes/alpha-note.md-->
 
 TODO
 

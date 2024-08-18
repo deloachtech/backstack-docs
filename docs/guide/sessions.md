@@ -1,4 +1,5 @@
 # Sessions
+<!--@include: includes/alpha-note.md-->
 
 
 Sessions are immutable objects created from online specifications and other distinctive values initiated during the login process. 

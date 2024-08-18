@@ -1,4 +1,5 @@
 # Pagination
+<!--@include: includes/alpha-note.md-->
 
 When an API response provides a list of objects, regardless of the quantity, pagination is supported. In paginated responses, objects are nested under a `list` attribute. The response includes request attributes such as `page_size`, `page_index`, `search`, and `filters` for specifying record requests.
 

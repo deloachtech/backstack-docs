@@ -1,5 +1,7 @@
 # Account Stats
 
+<!--@include: includes/alpha-note.md-->
+
 The `session.account.stats` array contains system-generated values you can use for managing resources.
 
 ## Example codebase implementation
@@ -7,8 +9,11 @@ The `session.account.stats` array contains system-generated values you can use f
 ```js
 // pseudocode
 
-if (session.account.stats.users === 10) <button>Update Plan</button>;
-else <button>Add User</button>;
+if (session.account.stats.users === 10) {
+  <button>Update Plan</button>;
+} else {
+  <button>Add User</button>;
+}
 ```
 
 ## Available statistics
@@ -28,8 +33,8 @@ else <button>Add User</button>;
 }
 ```
 
-| Property | Type | Description |
-| --- | --- | --- |
-| `users` | Integer | The count of account users. |
-| `children` | Integer | The child accounts networked under the account. |
+| Property            | Type    | Description                                                          |
+| ------------------- | ------- | -------------------------------------------------------------------- |
+| `users`             | Integer | The count of account users.                                          |
+| `children`          | Integer | The child accounts networked under the account.                      |
 | `optional_features` | Integer | The count of optional features for which the account has subscribed. |

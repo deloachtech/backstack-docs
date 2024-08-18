@@ -1,5 +1,7 @@
 # Architecture
 
+<!--@include: includes/alpha-note.md-->
+
 The Backstack architecture is designed to streamline the management of intricate data schemas. Familiarizing yourself with the terminology and the underlying structure will provide a thorough understanding of the process.
 
 ![Images](images/diagrams/architecture.svg)
@@ -7,21 +9,6 @@ The Backstack architecture is designed to streamline the management of intricate
 ## Accounts and users
 
 Accounts, like "Acme Corp", are entities _with_ users. When someone signs up, they become the first user of an account. Accounts and users are managed through your application's user interface and the Backstack API.
-
-## App schemas
-
-Application schemas encapsulate all pre-authentication and feature distribution information necessary for your codebase to serve your application directly from the client, eliminating the need for an API call.
-
-```json
-// app schema
-{
-    "app": { ... },
-    "access": { ... },
-    "versions": { ... },
-    "roles": { ... },
-    ...
-}
-```
 
 ## Sessions
 

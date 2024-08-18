@@ -1,4 +1,5 @@
 # Counters
+<!--@include: includes/alpha-note.md-->
 
 Counters are integer-based values stored for account-specific statistics. (For instance, tracking how often an account uses a feature.)
 

@@ -1,4 +1,5 @@
 # User
+<!--@include: includes/alpha-note.md-->
 
 The current session user.
 

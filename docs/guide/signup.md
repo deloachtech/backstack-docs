@@ -1,4 +1,5 @@
 # Signing Up
+<!--@include: includes/alpha-note.md-->
 
 Generate a new account and its first user.
 

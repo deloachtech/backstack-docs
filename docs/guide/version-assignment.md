@@ -1,4 +1,5 @@
 # Version Assignment
+<!--@include: includes/alpha-note.md-->
 
 Offer an interface for users to modify their application version.
 
