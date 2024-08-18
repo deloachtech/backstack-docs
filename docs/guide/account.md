@@ -4,7 +4,7 @@ The current session account.
 
 ## The Account object
 
-<!--@include: ./includes/objects/account.md-->
+<!--@include: includes/objects/account.md-->
 
 ## Create an account
 
@@ -56,7 +56,7 @@ POST /v1/account
 | `timezone_id` | Optional string | See the [timezones](/timezones) resource for more information. |
 | `country_id` | Required string | See the [countries](/countries) resource for more information. |
 
-<!--@include: ./includes/update-note.md-->
+<!--@include: includes/update-note.md-->
 
 ### Response
 

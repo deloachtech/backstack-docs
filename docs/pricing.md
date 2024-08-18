@@ -2,6 +2,7 @@
 
 App-based pricing enables you to begin with the core and add functionality based on customer requirements.
 
+
 ## Applications
 
 
@@ -49,4 +50,4 @@ Enhance core applications by integrating the functionality required to meet appl
 | `Versions` | Unlimited application feature [versioning](/versions). | TBD |
 
 
-_[1] Module in development for future release._
+_[1] Module in development for future release.

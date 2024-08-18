@@ -25,7 +25,7 @@ The app schema contains versions relevant to the accounts domain. The `domains.[
 
 The following will provide values for a group of radios for allowing selection of the application version.
 
-<!--@include: ./includes/version-list.md-->
+<!--@include: includes/version-list.md-->
 
 
 
@@ -41,7 +41,7 @@ POST /v1/account/versions/:version_id
 
 The selected Version object.
 
-<!--@include: ./includes/objects/version.md-->
-<!--@include: ./includes/objects/properties/version.md-->
+<!--@include: includes/objects/version.md-->
+<!--@include: includes/objects/properties/version.md-->
 
 

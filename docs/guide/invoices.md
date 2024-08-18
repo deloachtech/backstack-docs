@@ -4,8 +4,8 @@ todo
 
 ## The Invoice object
 
-<!--@include: ./includes/objects/invoice.md-->
-<!--@include: ./includes/objects/properties/invoice.md-->
+<!--@include: includes/objects/invoice.md-->
+<!--@include: includes/objects/properties/invoice.md-->
 
 
 ## Invoice items

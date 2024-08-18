@@ -2,7 +2,7 @@
 
 Features can be independently offered, providing additional account-level options beyond the current version functionality. Use optional features for offering unique functionality that might not be suitable for all accounts in the version schema.
 
-![Images](/images/diagrams/optional-features.svg)
+![Images](images/diagrams/optional-features.svg)
 
 When defining version functionality, features can be designated as optional. If a feature is offered optionally, the account needs to subscribe to the feature to access its functionality.
 
@@ -58,7 +58,7 @@ TODO: API response
 
 If the accounts version has optional features available, you'll want to offer methods for activating/deactivating them on your page.
 
-<!--@include: ./includes/optional-features.md-->
+<!--@include: includes/optional-features.md-->
 
 Then post the selected feature id to the API to toggle its active status.
 
@@ -74,6 +74,6 @@ TODO: API Response
 
 ## Monetizing optional features
 
-<!--@include: ./includes/auto-invoiced-fees.md-->
+<!--@include: includes/to-invoiced-fees.md-->
 
 See [invoicing-accounts](/invoicing-accounts) for additional information.

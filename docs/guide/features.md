@@ -63,7 +63,7 @@ See the [optional feature workflow](/optional-features) for incorporating option
 
 ## Monetizing optional features
 
-<!--@include: ./includes/auto-invoiced-fees.md-->
+<!--@include: includes/auto-invoiced-fees.md-->
 
 See [invoicing-accounts](/invoicing-accounts) for additional information.
 

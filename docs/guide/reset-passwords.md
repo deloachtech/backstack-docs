@@ -10,7 +10,7 @@ Enable users to reset their passwords during the log in process.
 Submit an email address to the API for lookup. Upon success, an email is sent to the user containing a tokened link back to your reset password page for submission with the new password.
 
 
-![Images](/images/diagrams/reset-password.svg)
+![Images](images/diagrams/reset-password.svg)
 
 
 
@@ -59,7 +59,7 @@ The response contains FYI data.
 | `user_ids` | Array | For your information, an array containing the user IDs associated with the email address. (An email address may represent multiple users.) |
 
 
-<!--@include: ./includes/error-response.md-->
+<!--@include: includes/error-response.md-->
 
 
 ## Preflight token validation
@@ -88,7 +88,7 @@ Upon success, the API will respond with the token submitted.
 }
 ```
 
-<!--@include: ./includes/error-response.md-->
+<!--@include: includes/error-response.md-->
 
 
 ## Reset password
@@ -130,6 +130,6 @@ Upon success, the API will respond with the [User object](/user), and you can be
 }
 ```
 
-<!--@include: ./includes/error-response.md-->
+<!--@include: includes/error-response.md-->
 
 

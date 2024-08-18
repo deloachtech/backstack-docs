@@ -7,7 +7,7 @@ Generate a new account and its first user.
 
 Submit the new account data to the API for processing. An activation email is sent to the new account user, containing a tokened link back to your page. When your page receives the token, it is then posted to the API for activation. Present your log-in page to enable the new user to authenticate.
 
-![Images](/images/diagrams/signup.svg)
+![Images](images/diagrams/signup.svg)
 
 
 ::: tip
@@ -59,7 +59,7 @@ This token is for your information only. The activation email contains a link wi
 }
 ```
 
-<!--@include: ./includes/error-response.md-->
+<!--@include: includes/error-response.md-->
 
 
 
@@ -74,7 +74,7 @@ var token = new URLSearchParams(window.location.hash).get('token');
 ### Request
 
 ```sh
-POST /v1/auth/signup-activation
+POST /v1/auth/signup/activation
 {
   "token": "co84fjo3irho2eihcf37hfou"
 }
@@ -106,7 +106,7 @@ The response will include the associated IDs for your information. You can begin
 | `version_id` | String | The version ID. |
 
 
-<!--@include: ./includes/error-response.md-->
+<!--@include: includes/error-response.md-->
 
 
 ## Signup domains collection
@@ -130,6 +130,6 @@ The [app schema object](/app-schemas) contains the domains available for signup.
 
 Provide a select using the following logic. Optionally, show the domain description and help signup with the select onChange() event.
 
-<!--@include: ./includes/signup-domain.md-->
+<!--@include: includes/signup-domain.md-->
 
 

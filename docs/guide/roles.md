@@ -39,7 +39,7 @@ See the [access control](/access-control) page for additional information.
 
 Manage your roles and feature access configurations through the Backstack dashboard. Assign roles to users using your user interface, leveraging pre-configured app schema data and the API.
 
-<!--@include: ./includes/role-assignment.md-->
+<!--@include: includes/role-assignment.md-->
 
 
 See the [account users workflow](/account-users) for more information.

@@ -7,7 +7,7 @@ Existing accounts have the capability to create child accounts for B2B relations
 
 Parent accounts send invitations to child accounts via system-generated emails for activation. These emails contain a tokened link that directs the child account to your activation page. You promptly request the API to establish the networked relationships using the email token. The API creates the necessary entities and emails instructions to the new account user for logging in.
 
-![Images](/images/diagrams/account-network.svg)
+![Images](images/diagrams/account-network.svg)
 
 
 ## Prerequisites
@@ -18,7 +18,7 @@ The application must have the network and login URLs defined in the Backstack da
 
 Networks operate on a domain basis and are configured through the Backstack dashboard. Parent domain accounts have the ability to create child accounts in subordinate domains.
 
-![Images](/images/diagrams/networks.svg)
+![Images](images/diagrams/networks.svg)
 
 
 ## Create network invitation
@@ -49,7 +49,7 @@ POST /v1/network/initiate
 
 The Network Invitation object.
 
-<!--@include: ./includes/objects/partials/network-invitation.md-->
+<!--@include: includes/objects/partials/network-invitation.md-->
 
 
 ## Update network invitation
@@ -78,7 +78,7 @@ Include the token provided in the request for your activation page in the API re
 
 The newly created [account object](/account).
 
-<!--@include: ./includes/objects/partials/account.md-->
+<!--@include: includes/objects/partials/account.md-->
 
 
 ## Update account network
@@ -90,8 +90,8 @@ TODO
 ## The Network Invitation object
 
 
-<!--@include: ./includes/objects/network-invitation.md-->
-<!--@include: ./includes/objects/properties/network-invitation.md-->
+<!--@include: includes/objects/network-invitation.md-->
+<!--@include: includes/objects/properties/network-invitation.md-->
 
 ## The Network object
 

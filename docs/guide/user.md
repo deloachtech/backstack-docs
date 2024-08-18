@@ -5,8 +5,8 @@ The current session user.
 
 ## The User object
 
-<!--@include: ./includes/objects/user.md-->
-<!--@include: ./includes/objects/properties/user.md-->
+<!--@include: includes/objects/user.md-->
+<!--@include: includes/objects/properties/user.md-->
 
 
 ## Create a user
@@ -50,7 +50,7 @@ POST /v1/user
 | `email` |  Required string | The users email address. |
 
 
-<!--@include: ./includes/update-note.md-->
+<!--@include: includes/update-note.md-->
 
 
 See the [account user workflow](/account-users) for updating user information related to the account relationship (e.g. roles).

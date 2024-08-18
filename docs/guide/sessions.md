@@ -1,5 +1,6 @@
 # Sessions
 
+
 Sessions are immutable objects created from online specifications and other distinctive values initiated during the login process. 
 
 These objects receive dynamic updates through the outcomes of various processes. As online specifications evolve or application resources are modified, all affected sessions are updated in real-time.
@@ -18,7 +19,7 @@ GET /v1/auth/session
 
 ## The Session object
 
-<!--@include: ./includes/objects/session.md-->
-<!--@include: ./includes/objects/properties/session.md-->
+<!--@include: includes/objects/session.md-->
+<!--@include: includes/objects/properties/session.md-->
 
 

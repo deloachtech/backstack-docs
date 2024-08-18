@@ -4,8 +4,8 @@ The API uses structured country data to perform geo-related computations.
 
 ## The Country object
 
-<!--@include: ./includes/objects/country.md-->
-<!--@include: ./includes/objects/properties/country.md-->
+<!--@include: includes/objects/country.md-->
+<!--@include: includes/objects/properties/country.md-->
 
 ## Read country
 
@@ -21,7 +21,7 @@ GET /v1/static/country
 
 The Country object.
 
-<!--@include: ./includes/objects/partials/country.md-->
+<!--@include: includes/objects/partials/country.md-->
 
 ## Enumerated countries
 

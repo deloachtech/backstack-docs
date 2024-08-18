@@ -2,7 +2,7 @@
 
 App versions are containers of features, organizing account-level application functionality (e.g. Basic, Advanced, Professional). While accounts may have access to multiple versions, they can only subscribe to one at any given time.
 
-![Images](/images/diagrams/versions.svg)
+![Images](images/diagrams/versions.svg)
 
 See the [architecture](/architecture) page for additional information.
 
@@ -24,7 +24,7 @@ Versions are fully managed using the Backstack dashboard, including their assign
 
 ## Monetizing versions
 
-<!--@include: ./includes/auto-invoiced-fees.md-->
+<!--@include: includes/auto-invoiced-fees.md-->
 
 
 See [invoicing-accounts](/invoicing-accounts) for additional information.
@@ -33,7 +33,7 @@ See [invoicing-accounts](/invoicing-accounts) for additional information.
 
 Manage version configurations through the Backstack dashboard. Allow accounts to select their preferred version using your user interface, leveraging pre-configured app schema data and the API.
 
-<!--@include: ./includes/version-list.md-->
+<!--@include: includes/version-list.md-->
 
 
 See the [version assignment workflow](/version-assignment) for incorporating account-based version management into your UI.
@@ -41,6 +41,6 @@ See the [version assignment workflow](/version-assignment) for incorporating acc
 
 ## The Version object
 
-<!--@include: ./includes/objects/version.md-->
-<!--@include: ./includes/objects/properties/version.md-->
+<!--@include: includes/objects/version.md-->
+<!--@include: includes/objects/properties/version.md-->
 

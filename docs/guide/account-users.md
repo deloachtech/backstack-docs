@@ -9,7 +9,7 @@ An account user represents the `session.user` and the access control privileges 
 
 When an account adds a new user, a system-generated email is sent to the user with a link to the log-in page.
 
-![Images](/images/diagrams/account-users.svg)
+![Images](images/diagrams/account-users.svg)
 
 ## Prerequisites
 
@@ -43,7 +43,7 @@ POST /v1/account/users
 
 The Account User object
 
-<!--@include: ./includes/objects/partials/account-user.md-->
+<!--@include: includes/objects/partials/account-user.md-->
 
 ## List Users
 
@@ -56,7 +56,7 @@ GET /v1/account/users
 ?page_size=25&page_index=1&search&filters[status]=active
 ```
 
-<!--@include: ./includes/list-parameters.md-->
+<!--@include: includes/list-parameters.md-->
 
 | Filter | Type | Options |
 | --- | --- | --- |
@@ -64,7 +64,7 @@ GET /v1/account/users
 
 ### Response
 
-<!--@include: ./includes/list-response.md-->
+<!--@include: includes/list-response.md-->
 
 | List item property | Type | Description |
 | --- | --- | --- |
@@ -102,13 +102,13 @@ POST /v1/account/users/:user_id
 | `resend_email` | Boolean | Submitting `true` will resend the account activation email. **This option is available until the user is activated.** |
 | `roles` | Optional array | An array of role IDs assigned to the user. |
 
-<!--@include: ./includes/update-note.md-->
+<!--@include: includes/update-note.md-->
 
 ### Response
 
 The Account user object.
 
-<!--@include: ./includes/objects/partials/account-user.md-->
+<!--@include: includes/objects/partials/account-user.md-->
 
 ## Delete a user
 
@@ -160,11 +160,11 @@ The app schema contains roles relevant to the application version. The `roles.di
 
 The following logic will provide data for a group of checkboxes when assigning roles.
 
-<<< @/snippets/role-assignment.js
+<<< snippets/role-assignment.js
 
 ## The Account User object
 
 An object that represents the current relationship between an account and a user.
 
-<!--@include: ./includes/objects/account-user.md-->
-<!--@include: ./includes/objects/properties/account-user.md-->
+<!--@include: includes/objects/account-user.md-->
+<!--@include: includes/objects/properties/account-user.md-->

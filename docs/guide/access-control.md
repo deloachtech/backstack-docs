@@ -35,7 +35,7 @@ GET v1/auth/session
 
 ## The architecture
 
-![Image](/images/diagrams/access-control.svg)
+![Image](images/diagrams/access-control.svg)
 
 Examples using the above schema:
 

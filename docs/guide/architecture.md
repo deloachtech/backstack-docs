@@ -2,7 +2,7 @@
 
 The Backstack architecture is designed to streamline the management of intricate data schemas. Familiarizing yourself with the terminology and the underlying structure will provide a thorough understanding of the process.
 
-![Images](/images/diagrams/architecture.svg)
+![Images](images/diagrams/architecture.svg)
 
 ## Accounts and users
 
@@ -43,7 +43,7 @@ These objects receive dynamic updates through the outcomes of various processes.
 
 Domains represent the highest level of application categorization. Each account is associated with a single domain, and each domain provides distinct versions of the application's functionality.
 
-![Images](/images/diagrams/domains.svg)
+![Images](images/diagrams/domains.svg)
 
 Domains are managed using the Backstack dashboard. They're assigned to an account during the sign-up process. See the [sign-up workflow](/signup) for more information.
 
@@ -51,7 +51,7 @@ Domains are managed using the Backstack dashboard. They're assigned to an accoun
 
 Versions are containers of features, organizing account-level application functionality. While accounts may have access to multiple versions, they can only subscribe to one at any time.
 
-![Images](/images/diagrams/versions.svg)
+![Images](images/diagrams/versions.svg)
 
 Versions are managed using the Backstack dashboard. The default version is assigned during the sign-up process, and the account upgrades/downgrades using your UI. See the [versions](/versions) page for more information.
 
@@ -61,7 +61,7 @@ Features are version-based, access-controlled containers of fine-grained applica
 
 See the [features](/features) page for more information.
 
-![Images](/images/diagrams/features.svg)
+![Images](images/diagrams/features.svg)
 
 Features are fully managed and assigned to versions using the Backstack dashboard.
 
@@ -69,7 +69,7 @@ Features are fully managed and assigned to versions using the Backstack dashboar
 
 Features can be independently offered, providing additional account-level options beyond the current version functionality. Use optional features for offering unique functionality that might not be suitable for all accounts in the version schema.
 
-![Images](/images/diagrams/optional-features.svg)
+![Images](images/diagrams/optional-features.svg)
 
 Optional features are managed using the Backstack dashboard. Accounts subscribe/unsubscribe to them using your UI. See the [optional features workflow](/optional-features) for more information.
 
@@ -77,4 +77,4 @@ Optional features are managed using the Backstack dashboard. Accounts subscribe/
 
 Networks operate on a domain basis and are configured through the Backstack dashboard. Parent domain accounts have the ability to create child accounts in subordinate domains. Additionally, networks can incorporate optional revenue-sharing features.
 
-![Images](/images/diagrams/networks.svg)
+![Images](images/diagrams/networks.svg)

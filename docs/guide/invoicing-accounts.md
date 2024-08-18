@@ -13,7 +13,7 @@ GET /v1/account/invoices
 ?page_size=25&page_index=1&search=&filters[status]=unpaid
 ```
 
-<!--@include: ./includes/list-parameters.md-->
+<!--@include: includes/list-parameters.md-->
 
 | Filter | Type | Options |
 | --- | --- | --- |
@@ -21,7 +21,7 @@ GET /v1/account/invoices
 
 ### Response
 
-<!--@include: ./includes/list-response.md-->
+<!--@include: includes/list-response.md-->
 
 | List item property | Type | Description |
 | --- | --- | --- |
@@ -41,7 +41,7 @@ GET /v1/account/invoices/:id
 
 ### Response
 
-<!--@include: ./includes/objects/invoice.md-->
+<!--@include: includes/objects/invoice.md-->
 
 ## Update invoice
 
@@ -49,7 +49,7 @@ Invoices cannot be updated or deleted.
 
 ## Auto-invoiced items
 
-<!--@include: ./includes/auto-invoiced-fees.md-->
+<!--@include: includes/auto-invoiced-fees.md-->
 
 See [versions](/versions) and [version assignment workflow](/version-assignment) for additional information.
 
@@ -90,7 +90,7 @@ POST /v1/account/invoice-items
 ### Response
 
 
-<!--@include: ./includes/objects/partials/invoice-item.md-->
+<!--@include: includes/objects/partials/invoice-item.md-->
 
 
 ## Read invoice item
@@ -105,7 +105,7 @@ GET /v1/account/invoice-items/:id
 ### Response
 
 
-<!--@include: ./includes/objects/invoice-item.md-->
+<!--@include: includes/objects/invoice-item.md-->
 
 
 ## Update invoice item
@@ -133,7 +133,7 @@ POST /v1/account/invoice-items
 
 ### Response
 
-<!--@include: ./includes/objects/partials/invoice-item.md-->
+<!--@include: includes/objects/partials/invoice-item.md-->
 
 
 ## List invoice items
@@ -147,7 +147,7 @@ GET /v1/account/invoice-items
 ?page_size=25&page_index=1&search&filters[invoice_id]=inv_1234567890
 ```
 
-<!--@include: ./includes/list-parameters.md-->
+<!--@include: includes/list-parameters.md-->
 
 | Filter | Type | Options |
 | --- | --- | --- |
@@ -156,7 +156,7 @@ GET /v1/account/invoice-items
 
 ### Response
 
-<!--@include: ./includes/list-response.md-->
+<!--@include: includes/list-response.md-->
 
 
 | List item property | Type | Description |

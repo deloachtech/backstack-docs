@@ -6,8 +6,8 @@ The API uses structured timezone data for all timestamped computations.
 
 ## The Timezone object
 
-<!--@include: ./includes/objects/timezone.md-->
-<!--@include: ./includes/properties/timezone.md-->
+<!--@include: includes/objects/timezone.md-->
+<!--@include: includes/properties/timezone.md-->
 
 ## Read timezone
 
@@ -23,7 +23,7 @@ GET /v1/static/timezone
 
 The Timezone object.
 
-<!--@include: ./includes/objects/partials/timezone.md-->
+<!--@include: includes/objects/partials/timezone.md-->
 
 
 ## Enumerated timezones

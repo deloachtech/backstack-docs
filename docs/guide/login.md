@@ -7,7 +7,7 @@ The login process authenticates an account user for the current session.
 
 Submit the username and password to the API for processing. Upon successful authentication, the API will provide an authenticated [session object](/sessions).
 
-![Image](/images/diagrams/login.svg)
+![Image](images/diagrams/login.svg)
 
 
 ## Authenticate
@@ -62,7 +62,7 @@ The `select_account.accounts` is an array of accounts to select from. The array 
 Present an option (e.g., an HTML select) for the user to choose which account to activate.
 
 
-<!--@include: ./includes/select-account.md-->
+<!--@include: includes/select-account.md-->
 
 
 Then submit the selected account ID to the API to activate.

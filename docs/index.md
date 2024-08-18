@@ -12,7 +12,7 @@ hero:
       link: https://dash.backstack.com
     - theme: alt
       text: Quickstart
-      link: /quickstart
+      link: /guide/quick-start
   # image:
   #   src: /images/logo-large.svg
   #   alt: Backstack
