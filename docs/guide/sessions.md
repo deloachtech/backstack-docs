@@ -1,5 +1,4 @@
 # Sessions
-<!--@include: includes/alpha-note.md-->
 
 
 Sessions are immutable objects created from online specifications and other distinctive values initiated during the login process. 
@@ -9,12 +8,12 @@ These objects receive dynamic updates through the outcomes of various processes.
 
 ## How it works
 
-The initial session object is provided during the [log in process](login).
+Sessions are provided upon request.
 
-We recommend storing the session object on the browser itself, and updating it based on your applications use load and functionality (e.g. every _n_ minutes). The API monitors and caches environmental changes, so you can efficiently update it on every request if desired.
+We recommend storing the session object on the browser itself, and updating it based on your applications use load and functionality (e.g. every _n_ minutes). The API monitors and caches environmental changes, so you can efficiently update it on every request.
 
 ```sh
-GET /v1/auth/session
+GET /v1/app/session
 ```
 
 
