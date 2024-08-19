@@ -15,7 +15,7 @@ export default defineConfig({
         logo: { src: '/favicon.svg', width: 24, height: 24 },
         nav: [
             { text: 'Guide', link: '/guide/introduction', activeMatch: '/guide/' },
-            { text: 'Sample Project', link: 'sample/introduction' },
+            { text: 'Sample Project', link: '/sample/introduction' },
             { text: 'Pricing', link: '/pricing', activeMatch: '/pricing' }
         ],
 
