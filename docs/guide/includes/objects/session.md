@@ -2,6 +2,19 @@
 // session object
 {
   "auth": true,
+  "demo": false,
+  "app": {
+    "id": "app_1234567890",
+    "title": "My App",
+    "created":"",
+    "login_url":"https://acmecorp.com/login",
+    "reset_url":"https://acmecorp.com/reset-password",
+    "signup_url":"https://acmecorp.com/signup",
+    "network_url":"https://acmecorp.com/network",
+    "stripe_pub_key":"pk_1234567890",
+    "stripe_key_exists":true,
+    "allow_signup": true
+  }
   "account": {
     "id": "acc_1234567890",
     "domain_id": "dom_1234567890",

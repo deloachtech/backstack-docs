@@ -1,6 +1,17 @@
 | Property | Type | Description |
 | -------- | ---- | ----------- |
 | `auth` | Boolean |  Whether the session has been fully authenticated. See the [log-in workflow](login) for more information. |
+| `demo` | Boolean |  Whether or not the session is in demo mode. |
+| `app.id` | String | The app ID. |
+| `app.title` | String | The app ID. |
+| `app.created` | String | The app ID. |
+| `app.login_url` | String | The URL for logging in. |
+| `app.reset_url` | String | The URL for resetting passwords. |
+| `app.signup_url` | String | The URL for signing up new accounts. |
+| `app.network_url` | String | The URL for network invitations. |
+| `app.stripe_pub_key` | String | The Stripe public key for te app. |
+| `app.stripe_key_exists` | String | Whether or not the app has provided its Stripe restricted key. |
+| `app.allow_signup` | Boolean | Whether or not the app has domains that allow for signing up new accounts. |
 | `account.id` | String | The [account](account) ID. |
 | `account.domain_id` | String | The domain ID for which the account was created under. |
 | `account.version_id` | String | The current [version](versions) of application functionality the account is subscribed. |

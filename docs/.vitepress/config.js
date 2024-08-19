@@ -14,14 +14,13 @@ export default defineConfig({
 
         logo: { src: '/favicon.svg', width: 24, height: 24 },
         nav: [
-            { text: 'Guide', link: '/guide/introduction',  activeMatch: '/guide/' },
-            { text: 'Sample Project', link: '/sample/introduction', activeMatch: '/sample/' },
+            { text: 'Guide', link: '/guide/introduction', activeMatch: '/guide/' },
             { text: 'Pricing', link: '/pricing', activeMatch: '/pricing' }
         ],
 
         sidebar: {
             '/guide/': { base: '/guide/', items: guideSidebar() },
-            '/sample/': { base: '/sample/', items: demoSidebar() }
+            // '/sample/': { base: '/sample/', items: sampleSidebar() }
         },
 
         // socialLinks: [
@@ -38,14 +37,13 @@ function guideSidebar() {
             items: [
                 { text: 'Introduction', link: 'introduction' },
                 { text: 'Quick Start', link: 'quick-start' },
+                { text: 'The Architecture', link: 'architecture' },
                 { text: 'Sample Project', link: 'sample-project' },
-                
             ]
         },
         {
             text: 'Core Concepts',
             items: [
-                { text: 'Architecture', link: 'architecture' },
                 { text: 'Sessions', link: 'sessions' },
                 { text: 'Accounts', link: 'accounts' },
                 { text: 'Users', link: 'users' },
@@ -87,6 +85,6 @@ function guideSidebar() {
     ]
 }
 
-function demoSidebar() {
+function sampleSidebar() {
     return []
 }

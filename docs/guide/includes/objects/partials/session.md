@@ -2,8 +2,7 @@
 // session object
 {
   "auth": true,
-  "signal": null,
-  "signal_data": null,
+  "app": { ... },
   "account": { ... },
   "user": { ... },
   "access": { ... },

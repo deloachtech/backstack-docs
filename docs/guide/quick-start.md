@@ -2,6 +2,9 @@
 
 We've streamlined the quickstart process so you can start using the API within minutes.
 
+:::info
+Check out our [live sample project](https://main.d39dm9d7yu1652.amplifyapp.com/) to see the API in action! Log in using `demo` as your username and password.
+:::
 
 ## Create a developer account
 
@@ -48,5 +51,5 @@ The response contains a [Session object](sessions) with an `auth` value of `fals
 
 You've successfully set up an API connection for your first application. Now, it's time to implement the [log in process](login) process.
 
-The [sample project](sample-project) is a great resource for information and actual integration methods.
+Browse the [Git repository](https://github.com/deloachtech/backstack-vue) for examples demonstrating how to effectively implement the Backstack API into your codebase.
 

@@ -1,6 +1,4 @@
-# Architecture
-
-<!--@include: includes/alpha-note.md-->
+# The Architecture
 
 The Backstack architecture is designed to streamline the management of intricate data schemas. Familiarizing yourself with the terminology and the underlying structure will provide a thorough understanding of the process.
 
@@ -19,6 +17,7 @@ These objects receive dynamic updates through the outcomes of various processes.
 ```json
 // session object
 {
+  "app": { ... },
   "account": { ... },
   "user": { ... },
   "access": { ... },

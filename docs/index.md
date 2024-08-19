@@ -9,13 +9,10 @@ hero:
   actions:
     - theme: brand
       text: Dashboard
-      link: https://dash.backstack.com
+      link: #
     - theme: alt
       text: Quickstart
       link: /guide/quick-start
-    - theme: alt
-      text: Sample Project
-      link: /sample/introduction
   # image:
   #   src: /images/logo-large.svg
   #   alt: Backstack
