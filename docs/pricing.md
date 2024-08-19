@@ -11,10 +11,10 @@ Create unlimited applications with the core feature set at no cost.
 | Feature| Description | Usage | Price |
 | ------ | ----------- | ----- | ----: |
 | `Authentication` | Complete authentication functionality, including login, signup, password resetting, and associated transactional emails. | Unlimited | Free |
-| `Sessions` | Complete [session management](/sessions) using the API and [application schemas](/app-schemas). | Unlimited | Free |
-| `Domains` | [Domain](/architecture#domains) based application entry points. | Up to 3 | Free |
-| `Versioning` | Domain based application [feature versioning](/versions). | Up to 3 for each domain | Free |
-| `Access Control` | Complete [control of access](/access-control) to codebase features. | Unlimited | Free |
+| `Sessions` | Complete [session management](guide/sessions) using the API. | Unlimited | Free |
+| `Domains` | [Domain](guide/architecture#domains) based application entry points. | Up to 3 | Free |
+| `Versioning` | Domain based application [feature versioning](guide/versions). | Up to 3 for each domain | Free |
+| `Access Control` | Complete [control of access](guide/access-control) to codebase features. | Unlimited | Free |
 | `API Resources` | API managed accounts, users, account users, RBAC and all associated transactional emails. | Unlimited | Free |
 
 
@@ -36,18 +36,18 @@ Enhance core applications by integrating the functionality required to meet appl
 
 | Module | Description | Price |
 | ------ | ----------- | ----: |
-| `Alerts` [1] | Generate user alerts. | |
-| `Counters` | Create transactional values for anything. See [counters](/counters) for more information. | TBD |
-| `Domains` | Unlimited [domains](/architecture#domains). | TBD |
-| `Monetization` | [Monetize](/monetization) application functionality. | TBD |
-| `Networks` | Allow accounts to create B2B [networks](/networks). | TBD |
-| `Network Fees` | Allow networks to implement [fee-based revenue sharing](/networks). | TBD |
-| `Optional Features` | Provide account-based [optional features](/optional-features) beyond versioning functionality. | TBD |
-| `Stripe` [1] | Integrate Stripe to automate monetization methods. | |
+| `Alerts` | Generate user alerts. | TBD |
+| `Counters` | Create transactional values for anything. See [counters](guide//counters) for more information. | TBD |
+| `Domains` | Unlimited [domains](guide/architecture#domains). | TBD |
+| `Monetization` | [Monetize](guide/monetization) application functionality. | TBD |
+| `Networks` | Allow accounts to create B2B [networks](guide/networks). | TBD |
+| `Network Fees` | Allow networks to implement [fee-based revenue sharing](guide/networks). | TBD |
+| `Optional Features` | Provide account-based [optional features](guide/optional-features) beyond versioning functionality. | TBD |
+| `Stripe` | Integrate Stripe to automate monetization methods. | TBD |
 | `Taxonomies` [1] | Manage categorized data. | |
 | `Timers` [1] | Run scheduled scripts. | |
-| `Tips` [1] | Provide UI tips. | |
-| `Versions` | Unlimited application feature [versioning](/versions). | TBD |
+| `Tips` | Provide UI tips. | TBD |
+| `Versions` | Unlimited application feature [versioning](guide/versions). | TBD |
 
 
-_[1] Module in development for future release.
+_[1] Module in development for future release._
