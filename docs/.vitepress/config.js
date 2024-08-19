@@ -15,12 +15,13 @@ export default defineConfig({
         logo: { src: '/favicon.svg', width: 24, height: 24 },
         nav: [
             { text: 'Guide', link: '/guide/introduction', activeMatch: '/guide/' },
+            { text: 'Sample Project', link: 'sample/introduction' },
             { text: 'Pricing', link: '/pricing', activeMatch: '/pricing' }
         ],
 
         sidebar: {
             '/guide/': { base: '/guide/', items: guideSidebar() },
-            // '/sample/': { base: '/sample/', items: sampleSidebar() }
+            '/sample/': { base: '/sample/', items: sampleSidebar() }
         },
 
         // socialLinks: [
@@ -38,7 +39,6 @@ function guideSidebar() {
                 { text: 'Introduction', link: 'introduction' },
                 { text: 'Quick Start', link: 'quick-start' },
                 { text: 'The Architecture', link: 'architecture' },
-                { text: 'Sample Project', link: 'sample-project' },
             ]
         },
         {
@@ -86,5 +86,40 @@ function guideSidebar() {
 }
 
 function sampleSidebar() {
-    return []
+    return [
+        {
+            text: 'Getting Started',
+            items: [
+                { text: 'Introduction', link: 'introduction' },
+                { text: 'Quick Start', link: 'quick-start' },
+            ]
+        },
+        {
+            text: 'Components',
+            items: [ 
+                { text: 'ActionDropdown', link: 'components/action-dropdown' },
+                { text: 'AxiosError', link: 'components/axios-error' },
+                { text: 'BarChart', link: 'components/bar-chart' },
+                { text: 'Button', link: 'components/button' },
+                { text: 'Error404', link: 'components/error-404' },
+                { text: 'Error500', link: 'components/error-500' },
+                { text: 'ExternalLink', link: 'components/external-link' },
+                { text: 'FormInput', link: 'components/form-input' },
+                { text: 'FormSelect', link: 'components/form-select' },
+                { text: 'Indicator', link: 'components/indicator' },
+                { text: 'LineChart', link: 'components/line-chart' },
+                { text: 'Modal', link: 'components/modal' },
+                { text: 'PageHeading', link: 'components/page-heading' },
+                { text: 'RadioButtonGroup', link: 'components/radio-button-group' },
+                { text: 'Setting', link: 'components/setting' },
+                { text: 'SettingButton', link: 'components/setting-button' },
+                { text: 'Spinner', link: 'components/spinner' },
+                { text: 'TableToolbar', link: 'components/table-toolbar' },
+                { text: 'Tip', link: 'components/tip' },
+                { text: 'Toast', link: 'components/toast' },
+                { text: 'Tooltip', link: 'components/tooltip' },
+
+            ]
+        }
+    ]
 }

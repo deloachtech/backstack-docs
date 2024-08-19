@@ -1,0 +1,3 @@
+# BarChart Component
+
+TODO
