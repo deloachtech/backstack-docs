@@ -10,7 +10,13 @@ Check out our [live sample project](https://main.d39dm9d7yu1652.amplifyapp.com/)
 
 Create your account at [dash.backstack.com](https://dash.backstack.com) to access the Backstack dashboard. 
 
-Your new account will contain your first application and some global resources, providing a foundation for you to customize as needed. (The `username` and `password` for the new application are the same as those you provided for your developer account.) Copy the application's API key. You'll need it to make your first request.
+Your new account will contain your first application and some global resources, providing a foundation for you to customize as needed. Copy the application's API key. You'll need it to make your first request.
+
+:::info
+The `username` and `password` for your first application are the same as those you provided for your developer account.
+:::
+
+
 
 
 ## Request a codebase session

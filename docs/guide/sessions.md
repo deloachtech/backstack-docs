@@ -8,13 +8,12 @@ These objects receive dynamic updates through the outcomes of various processes.
 
 ## How it works
 
-Sessions are provided upon request.
-
-We recommend storing the session object on the browser itself, and updating it based on your applications use load and functionality (e.g. every _n_ minutes). The API monitors and caches environmental changes, so you can efficiently update it on every request.
+Sessions are provided by the API upon request.
 
 ```sh
 GET /v1/app/session
 ```
+We recommend storing the session object on the browser itself, and updating it based on your applications use load and functionality (e.g. every _n_ minutes). The API monitors and caches environmental changes, so you can efficiently update it on every request.
 
 
 ## The Session object

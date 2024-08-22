@@ -1,6 +1,6 @@
 | Property | Type | Description |
 | -------- | ---- | ----------- |
-| `auth` | Boolean |  Whether the session has been fully authenticated. See the [log-in workflow](login) for more information. |
+| `auth` | Mixed |  A boolean indication whether the session has been fully authenticated, or an array of values provided to complete the authentication process. See the [log-in workflow](login) for more information. |
 | `demo` | Boolean |  Whether or not the session is in demo mode. |
 | `app.id` | String | The app ID. |
 | `app.title` | String | The app ID. |

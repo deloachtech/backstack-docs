@@ -45,8 +45,8 @@ function guideSidebar() {
             text: 'Core Concepts',
             items: [
                 { text: 'Sessions', link: 'sessions' },
-                { text: 'Accounts', link: 'accounts' },
-                { text: 'Users', link: 'users' },
+                { text: 'Accounts', link: 'account' },
+                { text: 'Users', link: 'user' },
                 { text: 'Features', link: 'features' },
                 { text: 'Roles', link: 'roles' },
                 { text: 'Versions', link: 'versions' },
@@ -73,8 +73,6 @@ function guideSidebar() {
         {
             text: 'Resources',
             items: [
-                { text: 'Account', link: 'account' },
-                { text: 'User', link: 'user' },
                 { text: 'Counters', link: 'counters' },
                 { text: 'Countries', link: 'countries' },
                 { text: 'Timezones', link: 'timezones' },
