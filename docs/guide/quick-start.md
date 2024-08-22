@@ -8,34 +8,40 @@ Check out our [live sample project](https://main.d39dm9d7yu1652.amplifyapp.com/)
 
 ## Create a developer account
 
-Create a developer account at [dash.backstack.com](https://dash.backstack.com) to access the Backstack dashboard. 
+Create your account at [dash.backstack.com](https://dash.backstack.com) to access the Backstack dashboard. 
 
 Your new account will contain your first application and some global resources, providing a foundation for you to customize as needed. (The `username` and `password` for the new application are the same as those you provided for your developer account.) Copy the application's API key. You'll need it to make your first request.
 
+
 ## Request a codebase session
 
-Request the current session from within your codebase using your app key.
+To securely interact with the API, you need to request a session using your app key. This session will provide you with a JSON Web Token (JWT) that you will use for authentication in subsequent requests. This approach ensures that your secured app key is only exposed during the initial request.
+
+Store the JWT using sessionStorage or a cookie (or any other method), then substitute your app key with it.
+
+Example code to handle requests using Axios.
 
 ```js
-<script>
-  var request = new XMLHttpRequest(); request.open("GET",
-  "https://api.backstack.com/v1/app/session", true);
-  request.setRequestHeader("Authorization", "Bearer " + app_key);
-  request.withCredentials = true; request.credentials = 'include';
-  request.send(); ...
-</script>
+const store = useStore();
+const appKey = sessionStorage.getItem(key) ?? secrets.appKey
+
+axios.get('https://api.backstack.com/v1/app/session', {
+  headers: {'Authorization' : 'Bearer ' + appKey}
+  })
+  .then((response) => {
+    sessionStorage.setItem('jwt', response.jwt)
+    store.setSession(response);
+  });
 ```
 
-The response will include all necessary information to handle current and future requests through a JWT, which is provided in an HttpOnly cookie and automatically sent to the API upon each request.
 
+The response includes a dynamic session object for use throughout your codebase. 
 
 ```sh
 HTTP/2.0 200 OK
-...
-Set-Cookie: BackstackJWT=emn367db...; Secure; HttpOnly
-...
 Content-Type: application/json
 {
+  "jwt": "eyJ0eXAiOiJKV1QiLCJhbG ...",
   "app": {
     "id": "app_1234567890",
     ...
@@ -45,7 +51,8 @@ Content-Type: application/json
 }
 ```
 
-The response contains a [Session object](sessions) with an `auth` value of `false`, indicating a `login` is required.
+The `session.auth` value is `false`, indicating a `login` is required.
+
 
 ## What's next?
 
