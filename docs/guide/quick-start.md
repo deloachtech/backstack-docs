@@ -3,7 +3,7 @@
 We've streamlined the quickstart process so you can start using the API within minutes.
 
 :::info
-Check out our [live sample project](https://main.d39dm9d7yu1652.amplifyapp.com/) to see the API in action! Log in using `demo` as your username and password.
+Check out our [live sample project](https://demo.backstack.com/) to see the API in action! Log in using `demo` as your username and password.
 :::
 
 ## Create a developer account
