@@ -3,7 +3,7 @@
 We've streamlined the quickstart process so you can start using the API within minutes.
 
 :::info
-Check out our [live de project](https://demo.backstack.com/) to see the API in action! Log in using `demo` as your username and password.
+Check out our [live demo project](https://demo.backstack.com/) to see the API in action! Log in using `demo` as your username and password.
 :::
 
 ## Create a developer account
