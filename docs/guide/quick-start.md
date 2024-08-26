@@ -3,7 +3,7 @@
 We've streamlined the quickstart process so you can start using the API within minutes.
 
 :::info
-Check out our [live sample project](https://demo.backstack.com/) to see the API in action! Log in using `demo` as your username and password.
+Check out our [live de project](https://demo.backstack.com/) to see the API in action! Log in using `demo` as your username and password.
 :::
 
 ## Create a developer account
@@ -64,5 +64,5 @@ The `session.auth` value is `false`, indicating a `login` is required.
 
 You've successfully set up an API connection for your first application. Now, it's time to implement the [log in process](login) process.
 
-Browse the [Git repository](https://github.com/deloachtech/backstack-vue) for examples demonstrating how to effectively implement the Backstack API into your codebase.
+Browse the [Git repository](https://github.com/deloachtech/backstack-demo) for examples demonstrating how to effectively implement the Backstack API into your codebase.
 

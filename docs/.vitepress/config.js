@@ -15,13 +15,13 @@ export default defineConfig({
         logo: { src: '/favicon.svg', width: 24, height: 24 },
         nav: [
             { text: 'Guide', link: '/guide/introduction', activeMatch: '/guide/' },
-            { text: 'Sample Project', link: '/sample/introduction' },
+            { text: 'Demo', link: '/demo/introduction' },
             { text: 'Pricing', link: '/pricing', activeMatch: '/pricing' }
         ],
 
         sidebar: {
             '/guide/': { base: '/guide/', items: guideSidebar() },
-            '/sample/': { base: '/sample/', items: sampleSidebar() }
+            '/demo/': { base: '/demo/', items: demoSidebar() }
         },
 
         // socialLinks: [
@@ -83,7 +83,7 @@ function guideSidebar() {
     ]
 }
 
-function sampleSidebar() {
+function demoSidebar() {
     return [
         {
             text: 'Getting Started',

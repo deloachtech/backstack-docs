@@ -13,9 +13,9 @@ hero:
     - theme: alt
       text: Quickstart
       link: /guide/quick-start
-    # - theme: alt
-    #   text: Sample Project
-    #   link: /sample/introduction
+    - theme: alt
+      text: Demo
+      link: /demo/introduction
   # image:
   #   src: /images/logo-large.svg
   #   alt: Backstack
