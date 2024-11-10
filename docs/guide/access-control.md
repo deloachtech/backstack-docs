@@ -1,27 +1,27 @@
 # Access Control
 
-<!--@include: includes/alpha-note.md-->
+Access control is available for various layers of the application schema.
 
+* Application functionality
+* Functional versioning
+* Optional features
+* Role Based Access Control (RBAC)
 
-Considered the flagship aspect of the Backstack architecture, extremely simplified access control can be achieved with minimal codebase intrusion across multiple layers of specifications simultaneously.
 
 ## How it works
 
-The computed `access` values specific for the active user are included in the current [Session object](sessions) for processing.
+Define your access control schemas using the Backstack dashboard. Validate within your codebase against the [session objects](app-session) `access` node to enforce _every_ aspect simultaneously.
 
-::: tip
-Backstack employs the CRUD permission methodology, which stands for Create, Read, Update, and Delete – representing the fundamental operations applicable to any model. 
-:::
-
-Validating feature access is the only requirement necessary to enforce every layer of the application environment. Backstack incorporates the application's domain, version and optional feature settings when compiling the `session.access` values.
 
 ### Request
 
-```sh
-GET v1/app/session
+```http request
+GET https://api.backstack.com/app/session
 ```
 
+
 ### Response
+
 
 ```json
 // session object
@@ -29,40 +29,39 @@ GET v1/app/session
   ...
   "access": {
     "payment-methods": "crud",
-    "another-feature": "r"
+    "account-users": "r",
+    "another-feature": "cr",
     ...
-  }
+  },
   ...
 }
 ```
 
-## The architecture
+### Validating access
 
-![Image](images/diagrams/access-control.svg)
-
-Examples using the above schema:
+Examples using the above response:
 
 ```js
 // pseudocode
 
-// Result is TRUE, as the current account is subscribed to
-// the Coupons optional feature and the current user has the
-// ability to delete a coupon through the Accounting role.
+// Result is TRUE
+if(hasAccess('payment-methods:d'))
+   <button>Delete Payment Method</button>
 
-if hasAccess('coupons:d')
-   <button>Delete Coupon</button>
-
-
-// Result is FALSE, as the current version does
-// not have access to the Templates feature.
-
-if hasAccess('templates:*')
-   <button>Manage Templates</button>
+// Result is FALSE
+if(hasAccess('account-users:c'))
+   <button>Add User</button>
 ```
 
-## Validating access
 
-Create a function in your preferred language to validate feature access based on the computed results provided in the current Session object.
+Backstack employs the CRUD (Create, Read, Update, and Delete) permission methodology, representing the fundamental operations applicable to any model.
+
+
+
+## Validation function
+
+
+Create a function in your preferred language to validate feature access against the session `access` object.
 
 ```js
 // Example access control function
@@ -119,3 +118,15 @@ export function hasAccess(requiredAccess, sessionAccess) {
   return false;
 }
 ```
+
+
+
+## Resources
+
+- [github.com/../session.js](https://github.com/deloachtech/backstack-demo/blob/main/src/session.js)
+- [github.com/../router.js](https://github.com/deloachtech/backstack-demo/blob/main/src/router.js)
+- [github.com/../hasAccess.js](https://github.com/deloachtech/backstack-demo/blob/main/src/utils/hasAccess.js)
+
+
+
+

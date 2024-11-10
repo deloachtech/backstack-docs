@@ -1,46 +1,21 @@
 # Monetization
-<!--@include: includes/alpha-note.md-->
 
-Backstack supports various monetization models for your application:
+Backstack offers various monetization models to help you generate revenue from your app. Combine these models to create
+a custom strategy that fits your business needs.
 
-- **Subscriptions**: Offer different versions of the application with built-in feature sets for distribution across various tiers.
-- **Revenue Sharing**: Distribute revenue across multiple accounts.
-- **In-app Purchases**: Set usage limits with upgrade options available through optional features.
-- **User Licenses**: Provide scalable access based on the number of users.
-- **Trial Limits**: Set limits to expire over time, offering users a temporary experience with enhanced features and functionality.
-- **Custom Fees**: Collect a fee for any monetary transaction performed during the account session.
+* Set monthly fees for any [app version](app-versions.md).
+* Offer different versions with tiered features.
+* Charge user fees based on user count.
+* Set temporary [limits](account-counters) for enhanced features.
+* [Invoice](account-invoices.md#create-invoice-item) for any API transaction or event.
+* Share revenue across [networked accounts](account-networks).
+* Offer in-app purchases for [optional features](app-optional-features).
 
+### Processing payments
 
-## How it works
-
-Account-based invoices are automatically generated for any implemented fees, requiring no additional action on your behalf. You can display the current account invoices in your UI and process account payments automatically if desired.
-
-See the [invoicing-accounts workflow](invoicing-accounts) for information on managing account invoices.
-
-## User license fees
-
-User license fees are set in the version settings through the Backstack dashboard, and the invoice amounts are automatically adjusted as the account adds or removes users.
-
-See the [versioning](version-assignment) and [invoicing-accounts](invoicing-accounts) workflows for additional information.
+Backstack uses your Stripe accounts limited API key for creating customers and processing invoice payments on your behalf. Manage further customer and payment details through your Stripe dashboard.
 
 
-## Subscription fees
-
-Assign a monthly subscription fee to any version using the Backstack dashboard, and provide a user interface for accounts to manage their current version. Backstack automatically tracks version changes and adjusts invoice amounts accordingly.
-
-See the [versioning](version-assignment) and [invoicing-accounts](invoicing-accounts) workflows for additional information.
 
 
-## In-app purchases
 
-Use the BackStack dashboard to set monthly subscription fees for optional features when configuring application versions. Implement a user interface within your application for account management of integrations. BackStack monitors changes and automatically adjusts invoice amounts.
-
-See the [optional features](optional-features) and [invoicing-accounts](invoicing-accounts) workflows for additional information.
-
-
-## Custom fees
-
-
-You can collect a fee for any event performed by the current account using an API call. The amount will be included in the account's invoice.
-
-See the [invoicing-accounts workflow](invoicing-accounts) for additional information.

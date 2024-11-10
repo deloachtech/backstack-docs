@@ -1,17 +1,11 @@
 # Introduction
 
-Backstack is a backend-as-a-service (BaaS) platform designed for developers, offering pre-built application functionalities through an intelligent API.
-
-Developers specify their application requirements using an online dashboard and then integrate session-specific values provided by the API into their codebase.
-
-::: info
-Backstack offers the flexibility to seamlessly integrate its features into your existing workflow, allowing for a smooth and controlled transition without any disruptions. 
-:::
+Backstack is a backend-as-a-service (BaaS) platform designed for developers, offering pre-built application functionalities through an extremely intelligent API.
 
 
-### The Ecosystem
+## Features
 
-Backstack is a comprehensive ecosystem that encompasses a wide range of common features and advanced processes required in frontend development.
+Backstack provides a range of features and processes required in frontend development.
 
 Common Features
 
@@ -35,5 +29,26 @@ Monetization
 - In-app feature integration
 - Account B2B networking with optional revenue sharing
 - Account invoicing and payments
+
+
+## Intelligent access control
+
+Control access for every aspect of the application schema using a single function. 
+
+## Simplified API
+
+The entire API is accessed through three distinct categories of logic. Simplifying the thought process while working withing your codebase.
+
+### /app
+
+Endpoints relating to the current session app schema as defined in the Backstack dashboard.
+
+### /account
+
+Endpoints specific to the current session account.
+
+### /user
+
+Endpoints for interaction with the current session user.
 
 

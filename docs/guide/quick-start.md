@@ -1,10 +1,8 @@
 # Quickstart
 
-We've streamlined the quickstart process so you can start using the API within minutes.
+It only takes a few minutes to start integrating the Backstack API functionality into your existing workflow. This guide will walk you through the process of setting up your first application and requesting a codebase session.
 
-:::info
-Check out our [live demo project](https://demo.backstack.com/) to see the API in action! Log in using `demo` as your username and password.
-:::
+Check out the  [live demo project](https://demo.backstack.com/) to see the API in action. Log in using `demo` as your username and password.
 
 ## Create a developer account
 
@@ -21,18 +19,18 @@ The `username` and `password` for your first application are the same as those y
 
 ## Request a codebase session
 
-To securely interact with the API, you need to request a session using your app key. This session will provide you with a JSON Web Token (JWT) that you will use for authentication in subsequent requests. This approach ensures that your secured app key is only exposed during the initial request.
+To securely interact with the API, you need to request a session using your app key. The session object will provide you with a JSON Web Token (JWT) that you will use for authorization in subsequent requests. This approach ensures that your secured app key is only exposed during the initial request.
 
 Store the JWT using sessionStorage or a cookie (or any other method), then substitute your app key with it.
 
-Example code to handle requests using Axios.
+Example Axios code to handle requests.
 
 ```js
 const store = useStore();
 const appKey = sessionStorage.getItem(key) ?? secrets.appKey
 
-axios.get('https://api.backstack.com/v1/app/session', {
-  headers: {'Authorization' : 'Bearer ' + appKey}
+axios.get('https://api.backstack.com/app/session', {
+  headers: {'Authorization' : appKey}
   })
   .then((response) => {
     sessionStorage.setItem('jwt', response.jwt)
@@ -43,7 +41,7 @@ axios.get('https://api.backstack.com/v1/app/session', {
 
 The response includes a dynamic session object for use throughout your codebase. 
 
-```sh
+```http request
 HTTP/2.0 200 OK
 Content-Type: application/json
 {
@@ -62,7 +60,7 @@ The `session.auth` value is `false`, indicating a `login` is required.
 
 ## What's next?
 
-You've successfully set up an API connection for your first application. Now, it's time to implement the [log in process](login) process.
+You've successfully set up an API connection for your first application. Now, it's time to implement the [log in process](app-login) process.
 
 Browse the [Git repository](https://github.com/deloachtech/backstack-demo) for examples demonstrating how to effectively implement the Backstack API into your codebase.
 
