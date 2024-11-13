@@ -62,6 +62,7 @@ function guideSidebar() {
                 {text: 'app/optional-features', link: 'app/optional-features'},
                 {text: 'app/session', link: 'app/session'},
                 {text: 'app/signup', link: 'app/signup'},
+                {text: 'app/unlock', link: 'app/unlock'},
                 {text: 'app/versions', link: 'app/versions'},
             ]
         },
