@@ -1,6 +1,6 @@
 # Lock Screen
 
-The lock screen is a security feature that allows users to temporarily relinquish access to all features of the application. The user must enter their password to regain their original access.
+Although the API is called `lock-screen`, it does not actually lock the user's screen. Instead, it returns a session object with an empty access value effectively locking the user out of the application. The user must then unlock the screen by submitting their password to the API.
 
 
 ## Lock session
