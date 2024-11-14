@@ -62,7 +62,6 @@ function guideSidebar() {
                 {text: 'app/optional-features', link: 'app/optional-features'},
                 {text: 'app/session', link: 'app/session'},
                 {text: 'app/signup', link: 'app/signup'},
-                {text: 'app/unlock', link: 'app/unlock'},
                 {text: 'app/versions', link: 'app/versions'},
             ]
         },
@@ -87,6 +86,7 @@ function guideSidebar() {
                 {text: 'user/change-password', link: 'user/change-password'},
                 {text: 'user/hidden-tips', link: 'user/hidden-tips'},
                 {text: 'user/notification-settings', link: 'user/notification-settings'},
+                {text: 'user/lock-screen', link: 'user/lock-screen'},
             ]
         },
 

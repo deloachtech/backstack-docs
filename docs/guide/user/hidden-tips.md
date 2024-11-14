@@ -15,7 +15,7 @@ Updates the session object to hide the tip with the specified ID.
 // updated session object
 {
   ...
-  "user  ": {
+  "user": {
     ...
     "hidden_tips": [
       "tip_1234567890",
@@ -49,7 +49,7 @@ Updates the session object to remove all hidden tips.
 // updated session object
 {
   ...
-  "user  ": {
+  "user": {
     ...
     "hidden_tips": []
   }
