@@ -2,6 +2,14 @@
 
 Although the API is called `lock-screen`, it can not actually lock the user`s screen. You will need to implement that in your codebase. Instead, it returns a session object with an empty access value, effectively locking the user out of the application. The user must then refresh the access values by submitting their password to the API.
 
+::: info
+The user object contains a `screen_locked` boolean value that you can use to determine if the user is locked out of the application. However, you don't need to use this value to implement a lock screen feature in your app. The removal of the access values is sufficient, as the user will be unable to access any features until they unlock the screen.
+:::
+
+
+::: warning
+In demo mode, the lock screen feature is simulated. As the access values are already empty. 
+:::
 
 ## Lock
 
@@ -13,10 +21,14 @@ Returns a [session object](../app/session.md) with an empty access value.
 
 
 ```json
-// session object with empty access value
+// session object
 {
   ...
   "access": {},
+  "user": {
+    ...,
+    "screen_locked": true
+  },
   ...
 }
 ```
@@ -36,13 +48,17 @@ Returns a [session object](../app/session.md) with the original access value.
 
 
 ```json
-// session object with empty access value
+// session object
 {
   ...
   "access": {
     "some-feature": "crud",
     ...
   },
+    "user": {
+        ...,
+        "screen_locked": false
+    },
   ...
 }
 ```
