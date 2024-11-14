@@ -16,7 +16,7 @@ Returns a [session object](../app/session.md) with an empty access value.
 // session object with empty access value
 {
   ...
-  "access": [],
+  "access": {},
   ...
 }
 ```
@@ -32,3 +32,17 @@ POST https://api.backstack.com/user/lock-screen
 ```
 
 Returns a [session object](../app/session.md) with the original access value.
+
+
+
+```json
+// session object with empty access value
+{
+  ...
+  "access": {
+    "some-feature": "crud",
+    ...
+  },
+  ...
+}
+```
