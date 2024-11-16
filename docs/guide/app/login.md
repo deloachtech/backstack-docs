@@ -108,6 +108,27 @@ the `auth.select_account.last_login` value to pre-select an option if desired.
 }
 ```
 
+::: info
+As an alternative, you can use the `/app/login-account` endpoint to retrieve the `auth.select_account` data separately.
+
+```http request
+GET https://api.backstack.com/app/login-account
+```
+
+Response 
+
+```json
+{
+  "accounts": {
+    "acc_1234567890": "Foo Account",
+    "acc_2345678901": "Bar Account",
+    ...
+  },
+  "last_login": "acc_1234567890"
+}
+```
+:::
+
 Provide a form for the user to select an account.
 
 ```html 

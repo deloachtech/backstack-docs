@@ -72,6 +72,7 @@ Returns the current session object.
     "avatar": "<svg>...</svg>",
     "avatar_color": "#952c8b",
     "hidden_tips": [],
+    "screen_locked": false,
     "mobile_number": "123-456-7890",
     "roles": [
       "rol_1234567898",
