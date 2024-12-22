@@ -109,6 +109,10 @@ the `auth.select_account.last_login` value to pre-select an option if desired.
 ```
 
 ::: info
+The `accounts.last_login` value will always contain a value, even if the user has never logged in before.
+:::
+
+::: info
 As an alternative, you can use the `/app/login-account` endpoint to retrieve the `auth.select_account` data separately.
 
 ```http request
