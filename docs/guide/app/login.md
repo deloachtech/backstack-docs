@@ -79,7 +79,7 @@ If the user is a member of more than one app account, the response will contain 
 the `auth` value of `select_account` for your codebase to react upon.
 
 The `auth.select_account.accounts` is an array of accounts for use in a select element. Use
-the `auth.select_account.last_login` value to pre-select an option if desired. This value will always be present, even if the user has never logged in before.
+the `auth.select_account.last_login` value to pre-select an option if desired. (This value will always be present, even if the user has never logged in before.)
 
 ```json
 // session object
