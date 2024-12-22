@@ -79,7 +79,7 @@ If the user is a member of more than one app account, the response will contain 
 the `auth` value of `select_account` for your codebase to react upon.
 
 The `auth.select_account.accounts` is an array of accounts for use in a select element. Use
-the `auth.select_account.last_login` value to pre-select an option if desired.
+the `auth.select_account.last_login` value to pre-select an option if desired. This value will always be present, even if the user has never logged in before.
 
 ```json
 // session object
@@ -109,11 +109,7 @@ the `auth.select_account.last_login` value to pre-select an option if desired.
 ```
 
 ::: info
-The `accounts.last_login` value will always contain a value, even if the user has never logged in before.
-:::
-
-::: info
-As an alternative, you can use the `/app/login-account` endpoint to retrieve the `auth.select_account` data separately.
+As an alternative, you can use the `/app/login-account` endpoint to retrieve the `auth.select_account` data separately. This is useful if you want to redirect to a different page for account selection.
 
 ```http request
 GET https://api.backstack.com/app/login-account
