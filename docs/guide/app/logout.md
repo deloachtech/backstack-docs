@@ -14,7 +14,7 @@ Provide a link or button for the user to log out of the app.
 <a href="https://api.backstack.com/app/logout">Log Out</a>
 ```
 
-Returns a session object with only the `app` values.
+Returns a [session object](session.md)  with only the `app` values.
 
 ```json
 // session object
@@ -31,10 +31,5 @@ Returns a session object with only the `app` values.
 }
 ```
 
-
-### Resources
-
-- [demo.backstack.com/app/logout](https://demo.backstack.com/app/logout)
-- [github.com/../app/Logout](https://github.com/deloachtech/backstack-demo/blob/main/src/views/app/Logout)
 
 

@@ -31,17 +31,9 @@ There are three possible responses:
 3. [Error](../errors.md) (e.g. invalid password)
 
 
-### Resources
-
-- [demo.backstack.com/app/login](https://demo.backstack.com/app/login)
-- [github.com/../app/Login.vue](https://github.com/deloachtech/backstack-demo/blob/main/src/views/app/Login.vue)
-
-
-
 ## Single account response
 
-If the user is a member of only one app account, the response will contain a [session object](session.md) with all related
-values, and the `auth` value will be true. The authentication process is complete.
+If the user is a member of only one app account, the response will contain a [session object](session.md) with the `auth` value of `true`. The authentication process is complete.
 
 ```json
 // session object
@@ -67,15 +59,9 @@ values, and the `auth` value will be true. The authentication process is complet
 }
 ```
 
-### Resources
-
-- [github.com/../app/Login.vue](https://github.com/deloachtech/backstack-demo/blob/main/src/views/app/Login.vue)
-
-
-
 ## Multiple account response {#multi-account}
 
-If the user is a member of more than one app account, the response will contain a session object with
+If the user is a member of more than one app account, the response will contain a [session object](session.md) with
 the `auth` value of `select_account` for your codebase to react upon.
 
 The `auth.select_account.accounts` is an array of accounts for use in a select element. Use
@@ -172,11 +158,6 @@ var session = response.data;
 ::: info
 If you bypass account selection during the log in process, use the [user/change-account](user-change-account.md) endpoint in your UI to achieve the same result after the user has logged in.
 :::
-
-
-### Resources
-
--[github.com/../app/Login.vue](https://github.com/deloachtech/backstack-demo/blob/main/src/views/app/Login.vue)
 
 
 
