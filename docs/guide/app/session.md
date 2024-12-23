@@ -69,8 +69,6 @@ Returns the current session object.
     "username": "demo",
     "name": "Demo User",
     "email": "demo@backstack.com",
-    "avatar": "<svg>...</svg>",
-    "avatar_color": "#952c8b",
     "hidden_tips": [],
     "screen_locked": false,
     "mobile_number": "123-456-7890",

@@ -20,8 +20,6 @@ Returns an account user object.
   "name": "James Doe",
   "email": "jamesdoe@acmecorp.com",
   "last_login": 1708348174,
-  "avatar": "<svg>...</svg>",
-  "avatar_color": "#ff0000",
   "roles": [
     "rol_751TqkACiLYbUMDe",
     ...
@@ -55,7 +53,6 @@ Returns a [records list](lists.md#records) of account users.
       "name": "James Doe",
       "email": "jamesdoe@acmecorp.com",
       "last_login": 1708348174,
-      "avatar": "<svg>...</svg>",
       "roles_csv": "Super User, ...",
       "editable": false
     },

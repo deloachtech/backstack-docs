@@ -24,8 +24,6 @@ Returns a user object.
   "username": "jamesdoe",
   "name": "James Doe",
   "email": "jamesdoe@acme-corp.com",
-  "avatar": "<svg>...</svg>",
-  "avatar_color": "#952c8b",
   "hidden_tips": [
     "tip_1234567890",
     ...
@@ -65,7 +63,6 @@ POST https://api.backstack.com/user
     "username": "jamesdoe", // required, cannot be password
     "email": "jdoe@acme-corp.com", // required
     "mobile_number": "123-456-7890",
-    "avatar_color": "#952c8b",
     "hidden_tips": [
         "tip_1234567890",
         ...
