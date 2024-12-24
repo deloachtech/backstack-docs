@@ -1,9 +1,9 @@
 # Lock Screen
 
-Although the API is called `lock-screen`, it can not actually lock the user`s screen. You will need to implement that in your codebase. Instead, it returns a session object with an empty access value, effectively locking the user out of the application. The user must then refresh the access values by submitting their password to the API.
+Although the API is called `lock-screen`, it can not actually lock the user`s screen. You will need to implement that in your codebase. Instead, it returns a session object with an empty access value, blocking access to permission based application features. The user must then refresh the session access values by submitting their password to the API.
 
 ::: info
-The user object contains a `screen_locked` boolean value that you can use to determine if the user is locked out of the application. However, you don't need to use this value to implement a lock screen feature in your app. The removal of the access values is sufficient, as the user will be unable to access any features until they unlock the screen.
+The user object contains a `screen_locked` boolean value that you can use to determine if the user is locked out of the application.
 :::
 
 
