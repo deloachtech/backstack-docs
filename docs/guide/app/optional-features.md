@@ -12,7 +12,6 @@ Features are managed through the Backstack dashboard with the API providing acce
 
 ```http request
 GET https://api.backstack.com/app/optional-features
-?collection=true
 ```
 
 Returns a [collection list](../lists#collection) of optional features available for the current app version.
@@ -31,12 +30,6 @@ Returns a [collection list](../lists#collection) of optional features available 
   ...
 ]
 ```
-
-### Resources
-
-- [TODO demo.backstack.com/app/optional-features](https://demo.backstack.com/app/optional-features)
-- [TODO github.com/../app/OptionalFeatures.vue](https://github.com/deloachtech/backstack-demo/blob/main/src/views/app/OptionalFeatures.vue)
-
 
 
 
