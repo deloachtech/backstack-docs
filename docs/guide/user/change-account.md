@@ -20,17 +20,17 @@ Returns a [selection list](lists.md#selection) of account IDs and titles availab
 ]
 ```
 
-### Resources
-
-- [demo.backstack.com/](https://demo.backstack.com/change-account)
-- [github.com/../ChangeAccount.vue](https://github.com/deloachtech/backstack-demo/blob/main/src/views/account/change/ChangeAccount.vue)
-
 
 
 ## Activate account
 
+Post the selected `account_id` to the endpoint to activate the account.
+
 ```http request
-POST https://api.backstack.com/user/change-account/:id
+POST https://api.backstack.com/user/change-account
+{
+    "account_id": "acc_2345678910"
+}
 ```
 
 Returns an updated [session object](app-session.md) with the resulting changes.
@@ -63,9 +63,5 @@ Returns an updated [session object](app-session.md) with the resulting changes.
 ```
 
 
-### Resources
-
-- [demo.backstack.com/](https://demo.backstack.com/change-account)
-- [github.com/../ChangeAccount.vue](https://github.com/deloachtech/backstack-demo/blob/main/src/views/account/change/ChangeAccount.vue)
 
 
