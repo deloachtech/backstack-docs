@@ -4,15 +4,22 @@ Authenticate a user for the current session.
 
 ## Authentication
 
-Provide a form for the user to submit their username and password.
+[//]: # (Provide a form for the user to submit their username and password.)
 
-```html
-<form id="login-form">
-    <input type="text" name="username" placeholder="Username" required>
-    <input type="password" name="password" placeholder="Password" required>
-    <button type="submit">Log In</button>
-</form>
-```
+[//]: # ()
+[//]: # (```html)
+
+[//]: # (<form id="login-form">)
+
+[//]: # (    <input type="text" name="username" placeholder="Username" required>)
+
+[//]: # (    <input type="password" name="password" placeholder="Password" required>)
+
+[//]: # (    <button type="submit">Log In</button>)
+
+[//]: # (</form>)
+
+[//]: # (```)
 
 Submit the `username` and `password` values to the API for authentication.
 
@@ -62,7 +69,7 @@ If the user is a member of only one app account, the response will contain a [se
 ## Multiple account response {#multi-account}
 
 If the user is a member of more than one app account, the response will contain a [session object](session.md) with
-the `auth` value of `select_account` for your codebase to react upon.
+the `auth` value of `select_account`.
 
 The `auth.select_account.accounts` is an array of accounts for use in a select element. Use
 the `auth.select_account.last_login` value to pre-select an option if desired. (This value will always be present, even if the user has never logged in before.)
