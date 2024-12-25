@@ -162,6 +162,19 @@ GET https://api.backstack.com/account/users
 ]
 ```
 
+You can iterate over the list to create an HTML select element.
+
+```html
+<select name="account_id">
+    {data?.map((item) => {
+        const [key, value] = Object.entries(item)[0]
+        return (
+            <option key={key} value={key}>{value}</option>
+        )
+    })}
+</select>
+```
+
 Selections may also include additional data for more complex input elements.
 
 ```http request
